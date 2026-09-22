@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Team Monthly Update — Interactive Newsletter</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#4f46e5;--muted:#6b7280;--glass:rgba(255,255,255,0.7)}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#0f172a;background:linear-gradient(180deg,#f6f8fb 0%, #eef2ff 100%)}
+    .container{max-width:980px;margin:36px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .hero{margin-top:18px;border-radius:12px;overflow:hidden;background:var(--card);box-shadow:0 8px 20px rgba(15,23,42,0.06)}
+    .hero .hero-img{width:100%;height:220px;background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=79f5d2e0b3e6f1db7ef3f0a4d3f4b7ab');background-size:cover;background-position:center}
+    .hero .hero-body{padding:18px}
+    .cta{display:inline-flex;gap:8px;margin-top:10px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:#fff;color:var(--accent);border:1px solid #e6e9ff}
+
+    .kpis{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .kpi{flex:1 1 180px;background:linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));padding:12px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+    .kpi h3{margin:0;font-size:18px}
+    .kpi p{margin:6px 0 0;color:var(--muted)}
+    .kpi .value{font-size:20px;font-weight:700;margin-top:8px}
+
+    .content{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    @media(max-width:980px){.content{grid-template-columns:1fr} .kpis{flex-direction:row;overflow:auto;padding-bottom:6px}}
+
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(15,23,42,0.04)}
+    .card h2{margin:0 0 10px}
+
+    .chart-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .seg{background:#f3f4f6;padding:6px 8px;border-radius:8px;font-size:13px}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+
+    /* small niceties */
+    .muted{color:var(--muted)}
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">TU</div>
+      <div>
+        <h1>Team Monthly Update — September</h1>
+        <p class="lead">A quick interactive summary of progress, highlights, and metrics. Click the charts to explore and use the filters to focus on date ranges.</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-img" role="img" aria-label="Team collaboration and charts"></div>
+      <div class="hero-body">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>
+            <h2 style="margin:0">September Highlights</h2>
+            <p class="muted" style="margin:6px 0 0">Launch readiness, cross-team demos, and performance improvements across key modules.</p>
+            <div class="cta">
+              <a class="btn" href="#chart">View Interactive Metrics</a>
+              <a class="btn secondary" href="#details">Read full notes</a>
+            </div>
+          </div>
+          <div style="min-width:180px">
+            <p class="muted" style="margin:0 0 8px;font-size:13px">Top shoutouts</p>
+            <div class="kpi" style="padding:8px;border-radius:8px;background:linear-gradient(90deg,#fff,#f8fbff);">
+              <div style="font-weight:700">Design & PM</div>
+              <div class="muted" style="font-size:13px;margin-top:6px">Outstanding coordination on release</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="kpis" style="margin-top:14px">
+      <div class="kpi card">
+        <h3>Active Projects</h3>
+        <div class="value">6</div>
+        <p class="muted">+2 since last month</p>
+      </div>
+      <div class="kpi card">
+        <h3>Completed Sprints</h3>
+        <div class="value">3</div>
+        <p class="muted">On track</p>
+      </div>
+      <div class="kpi card">
+        <h3>Customer NPS</h3>
+        <div class="value">72</div>
+        <p class="muted">Improved by 5 pts</p>
+      </div>
+    </div>
+
+    <main class="content">
+      <section class="card">
+        <h2 id="chart">Interactive Metrics</h2>
+        <div class="chart-controls" style="margin-bottom:10px">
+          <div class="seg">Metric: <strong>Active Users</strong></div>
+          <div class="seg">Environment: <strong>Production</strong></div>
+          <div style="margin-left:auto;display:flex;gap:6px">
+            <button class="btn" data-range="7">7d</button>
+            <button class="btn" data-range="30">30d</button>
+            <button class="btn" data-range="90">90d</button>
+            <button class="btn" data-range="all">All</button>
+          </div>
+        </div>
+        <canvas id="mainChart" width="800" height="380"></canvas>
+        <p class="muted" style="margin-top:10px">Tip: hover points to see exact values. Use the range buttons to focus.</p>
+      </section>
+
+      <aside class="card" id="details">
+        <h2>Recent Activity</h2>
+        <ul style="padding-left:18px">
+          <li>Release candidate built and smoke-tested — no blockers.</li>
+          <li>UX improvements deployed for the onboarding flow.</li>
+          <li>Two performance PRs merged: <span class="muted">DB query optimizations</span>.</li>
+        </ul>
+        <h3 style="margin-top:12px">Downloads & Assets</h3>
+        <p class="muted">Export interactive charts as PNG or CSV for reports.</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" id="exportPng">Export PNG</a>
+          <a class="btn secondary" id="exportCsv">Export CSV</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Want this as an email? Use the export options to create a static snapshot and include it in your HTML email template. Built with a focus on accessibility and responsive layout.</p>
+    </footer>
+  </div>
+
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  <script>
+    // Generate sample date labels (last 180 days) and random sample data
+    function generateSampleData(days){
+      const labels=[]; const values=[]; const now=new Date();
+      for(let i=days-1;i>=0;i--){
+        const d=new Date(now); d.setDate(now.getDate()-i);
+        labels.push(d.toISOString().slice(0,10));
+        // sample weekly seasonality + trend + noise
+        const trend = (labels.length/180)*120; // growing trend
+        const season = 12*Math.sin(labels.length/7);
+        const noise = (Math.random()-0.5)*16;
+        values.push(Math.max(0, Math.round(200 + trend + season + noise)));
+      }
+      return {labels,values};
+    }
+
+    const fullDays=180;
+    const baseData = generateSampleData(fullDays);
+
+    const ctx = document.getElementById('mainChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: baseData.labels,
+        datasets: [{
+          label: 'Active Users',
+          data: baseData.values,
+          borderColor: '#4f46e5',
+          backgroundColor: 'rgba(79,70,229,0.08)',
+          pointRadius: 3,
+          tension: 0.25,
+          fill: true
+        }]
+      },
+      options: {
+        responsive:true,
+        maintainAspectRatio:false,
+        interaction: {mode:'index', intersect:false},
+        plugins: {
+          legend: {display:false},
+          tooltip: {mode:'index', intersect:false}
+        },
+        scales: {
+          x: {type:'category', ticks:{maxRotation:0}},
+          y: {beginAtZero:true}
+        }
+      }
+    });
+
+    // range buttons
+    document.querySelectorAll('[data-range]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const r=btn.getAttribute('data-range');
+        let startIdx=0;
+        if(r!=='all'){
+          const n=parseInt(r,10);
+          startIdx = Math.max(0, baseData.labels.length - n);
+        }
+        updateChart(startIdx);
+      });
+    });
+
+    function updateChart(startIdx){
+      chart.data.labels = baseData.labels.slice(startIdx);
+      chart.data.datasets[0].data = baseData.values.slice(startIdx);
+      chart.update();
+    }
+
+    // export PNG
+    document.getElementById('exportPng').addEventListener('click',()=>{
+      const a=document.createElement('a');
+      a.href = document.getElementById('mainChart').toDataURL('image/png');
+      a.download = 'active-users.png';
+      a.click();
+    });
+
+    // export CSV
+    document.getElementById('exportCsv').addEventListener('click',()=>{
+      const labels=chart.data.labels; const data=chart.data.datasets[0].data;
+      let csv='date,value\n';
+      for(let i=0;i<labels.length;i++){csv += `${labels[i]},${data[i]}\n`}
+      const blob = new Blob([csv], {type:'text/csv'});
+      const url = URL.createObjectURL(blob);
+      const a=document.createElement('a'); a.href=url; a.download='active-users.csv'; a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    // initial focus to last 30 days
+    updateChart(Math.max(0, baseData.labels.length - 30));
+  </script>
+</body>
+</html>

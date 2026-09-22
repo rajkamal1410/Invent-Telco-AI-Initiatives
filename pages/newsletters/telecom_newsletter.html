@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Telecom Executive Brief — M&A, AI, Financials & Technical Trends</title>
+  <style>
+    :root{--bg:#0f1724;--card:#071324;--muted:#94a3b8;--accent:#00d4ff;--accent2:#7c3aed;--success:#10b981;--warn:#f59e0b;--danger:#ef4444}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#081026 0%, #071222 60%);-webkit-font-smoothing:antialiased}
+    .wrapper{max-width:1150px;margin:28px auto;padding:28px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 12px 36px rgba(2,6,23,0.75);}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+    .logo{width:68px;height:68px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#041027;font-weight:800;font-size:22px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+    nav.tabs{display:flex;gap:8px;margin:18px 0 22px}
+    nav.tabs button{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer;transition:all .18s}
+    nav.tabs button.active{background:linear-gradient(90deg, rgba(0,212,255,0.08), rgba(124,58,237,0.06));border-color:rgba(124,58,237,0.2);color:#e6eef6;box-shadow:0 8px 24px rgba(12,18,40,0.6);transform:translateY(-2px)}
+    .content{display:grid;grid-template-columns:1fr 340px;gap:18px}
+    .main{min-height:420px}
+    .sidebar{position:sticky;top:36px;height:fit-content;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border-radius:12px;padding:14px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.03);}
+    .card h3{margin:0 0 8px;font-size:15px;display:flex;align-items:center;gap:10px}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+    .summary{color:#dbe9ff;font-size:13px;line-height:1.4}
+    .source{font-size:12px;color:var(--muted);margin-top:10px}
+    .kpi{display:flex;gap:8px;flex-wrap:wrap}
+    .kpi .item{background:linear-gradient(90deg,#041226, rgba(255,255,255,0.01));padding:12px;border-radius:8px;min-width:130px;border:1px solid rgba(255,255,255,0.02)}
+    .kpi .val{font-weight:800;color:#fff;font-size:18px}
+    .small{font-size:12px;color:var(--muted)}
+    .article-image{width:100%;height:140px;border-radius:8px;object-fit:cover;margin-top:8px}
+    footer{margin-top:18px;padding-top:12px;border-top:1px dashed rgba(255,255,255,0.02);color:var(--muted);font-size:12px}
+    a.source-link{color:var(--accent);text-decoration:none}
+    /* card grid for lists */
+    .grid-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:980px){.content{grid-template-columns:1fr}.grid-list{grid-template-columns:1fr}}
+    /* smart-art */
+    .smart-art{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px;background:linear-gradient(90deg, rgba(0,212,255,0.03), rgba(124,58,237,0.02));border-radius:10px}
+    .pillar{flex:1;min-width:150px;padding:10px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);text-align:center}
+    .pillar h4{margin:6px 0 0;font-size:13px}
+    /* step playbook */
+    .playbook{display:flex;flex-direction:column;gap:8px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800}
+    .step .desc{font-size:13px}
+    /* RAG chips */
+    .chip{display:inline-block;padding:6px 8px;border-radius:999px;font-weight:700;font-size:12px;color:#041027}
+    .chip.g{background:var(--success)}
+    .chip.a{background:var(--warn)}
+    .chip.r{background:var(--danger)}
+    /* charts */
+    .sparkline{width:100%;height:36px}
+    .bar-chart{width:100%;height:60px}
+    /* subtle interactive read-more */
+    .read-more{margin-top:10px;display:inline-block;color:var(--accent);cursor:pointer;font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">T</div>
+      <div>
+        <h1>Telecom Executive Brief</h1>
+        <p class="lead">Crisp M&A, AI, Financial & Technical trend summary — curated from industry sources for a quick executive glance. Sources: LightReading, Fierce Network, Mobile World Live, RCR Wireless, Capacity, GSMA Intelligence, Ericsson, NVIDIA, AWS, 3GPP, ITU and others supplied.</p>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="active" data-tab="dashboard">Dashboard</button>
+      <button data-tab="ma">Mergers & Acquisitions</button>
+      <button data-tab="ai">AI & Automation</button>
+      <button data-tab="finance">Financial Highlights</button>
+      <button data-tab="tech">Technical Trends</button>
+      <button data-tab="sources">Sources & Notes</button>
+    </nav>
+
+    <div class="content">
+      <main class="main">
+        <!-- Dashboard -->
+        <section id="dashboard" class="panel" style="display:block">
+          <div class="card smart-art" aria-hidden="false">
+            <div class="pillar"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#001320"/></svg><h4>M&A</h4></div>
+            <div class="pillar"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#001320"/></svg><h4>AI & Automation</h4></div>
+            <div class="pillar"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#001320"/></svg><h4>Financials</h4></div>
+            <div class="pillar"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#001320"/></svg><h4>Technical Trends</h4></div>
+          </div>
+
+          <div class="card">
+            <h3>Executive Summary — Top 5 developments</h3>
+            <div class="meta">1-page executive snapshot</div>
+            <div class="summary">Top 5: 1) AI-native networks accelerating; 2) Network APIs gaining traction; 3) Satellite-to-mobile partnerships expanding; 4) Enterprise private 5G demand rising; 5) Operator-hyperscaler strategic deals. Implication: prioritise AI pilots with clear ROI, accelerate API monetisation and plan CapEx for hybrid network expansion.</div>
+            <div class="source small">Strategic implications — concise for CXO decisions</div>
+          </div>
+
+          <div class="card">
+            <h3>Exec Playbook — Step-by-step</h3>
+            <div class="playbook">
+              <div class="step"><div class="num">1</div><div class="desc"><strong>Prioritise pilots.</strong> Select 2 AI / edge pilots tied to clear KPIs (cost, latency, revenue) and a timeline to scale.</div></div>
+              <div class="step"><div class="num">2</div><div class="desc"><strong>API monetisation.</strong> Define 1-2 network API products and an enterprise go-to-market pilot with target revenue.</div></div>
+              <div class="step"><div class="num">3</div><div class="desc"><strong>CapEx alignment.</strong> Rebase short-term investments to favour hybrid cloud, private networks and fibre where ROI exceeds threshold.</div></div>
+              <div class="step"><div class="num">4</div><div class="desc"><strong>Regulatory check.</strong> Map regulatory dependencies (spectrum, data governance) and assign owners for each market.</div></div>
+              <div class="step"><div class="num">5</div><div class="desc"><strong>Measure & scale.</strong> Establish monthly KPIs dashboard and 90-day review cadence to decide scale vs pivot.</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>CEO Corner</h3>
+            <div class="summary">Short leader perspectives: focus on investment priorities, regulatory headwinds, and where to place growth bets (enterprise, cloud partnerships, data products). Recommendation: include a 1-paragraph quote from a CEO each edition.</div>
+            <div class="source small">Suggested sources: leading operator earnings calls</div>
+          </div>
+
+          <div class="card">
+            <h3>Analyst Viewpoint</h3>
+            <div class="summary">Synthesis from GSMA Intelligence, Omdia, Analysys Mason, Dell'Oro: key forecasts, competitive positioning, and adoption timelines. Use this to challenge internal roadmaps and validate TAM assumptions.</div>
+            <div class="source small">Analysts: GSMA, Omdia, Analysys Mason, Dell'Oro</div>
+          </div>
+
+          <div class="card">
+            <h3>Industry Trends Radar (RAG)</h3>
+            <div class="summary">Network: 5G Advanced (G), Open RAN (A), Cloud RAN (A). AI: AI-native networks (G), Autonomous Networks (A), Agentic AI (R). Edge & Private Networks: Enterprise Private 5G (G), Edge Computing (A). Consumer: FWA (A), eSIM (A).</div>
+            <div class="source small">RAG = Green (adopt/scale), Amber (pilot/watch), Red (risk/early)</div>
+          </div>
+
+          <div class="card">
+            <h3>Telecom AI Watch</h3>
+            <div class="summary">Dedicated tracking of AI use-cases: Autonomous operations for cost reduction, generative AI for customer care, AI-RAN experiments for RAN optimisation. Executive question: How will AI change revenue, cost, and CX this year?</div>
+            <div class="source small">Use-cases & ROI focus</div>
+          </div>
+
+          <div class="card">
+            <h3>Data Monetization & B2B Growth</h3>
+            <div class="summary">Network APIs, CPaaS, data products and digital identity are primary levers. Recommendation: pilot 2 monetisation experiments tied to measurable KPIs (revenue per enterprise, TTM).</div>
+          </div>
+
+          <div class="card">
+            <h3>Competitive Intelligence (Snapshot)</h3>
+            <div class="summary">Reliance Jio: new consumer products. Airtel: enterprise push. Verizon: AI initiatives. AT&T: network transformation. Deutsche Telekom: digital growth. Track operator moves weekly.</div>
+          </div>
+
+          <div class="card">
+            <h3>Regulatory & Spectrum Update</h3>
+            <div class="summary">Track FCC, TRAI/DoT, EU Commission, ITU decisions affecting auctions, privacy and AI governance. Note: regulatory timing materially affects rollout plans and monetisation windows.</div>
+          </div>
+
+          <div class="card">
+            <h3>Technology Deep Dive (this issue)</h3>
+            <div class="summary">Feature: Network APIs — what they are, business impact, adoption status, and operator case studies. (Rotate topics each edition.)</div>
+          </div>
+
+          <div class="card">
+            <h3>Investment & M&A Tracker</h3>
+            <div class="summary">Monitor funding rounds, acquisitions, and strategic partnerships: operator-hyperscaler deals, Open RAN investments, fibre rollups. Provide a compact table in each issue.</div>
+          </div>
+
+          <div class="card">
+            <h3>Vendor Innovation Spotlight</h3>
+            <div class="summary">Spotlight on vendor launches (Ericsson, Nokia, Huawei, Cisco, NVIDIA, AWS). Assess operator adoption and strategic significance.</div>
+          </div>
+
+          <div class="card">
+            <h3>Voice of the Customer</h3>
+            <div class="summary">Enterprise perspectives from manufacturing, banking, healthcare — connectivity needs and digital transformation barriers. Use short quotes where possible.</div>
+          </div>
+
+          <div class="card">
+            <h3>Success Story / Case Study</h3>
+            <div class="summary">One concise case each edition: business problem, solution, outcomes (metrics). Example: 30% OPEX reduction using AI-driven ops.</div>
+          </div>
+
+          <div class="card">
+            <h3>Key Metrics Dashboard (monthly)</h3>
+            <div class="kpi">
+              <div class="item">
+                <div class="val">Global subs</div>
+                <div class="small">Subscribers & 5G penetration</div>
+                <svg class="bar-chart" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
+                  <rect x="2" y="10" width="12" height="28" rx="2" fill="#0ea5b3"></rect>
+                  <rect x="18" y="4" width="12" height="34" rx="2" fill="#06b6d4"></rect>
+                  <rect x="34" y="12" width="12" height="26" rx="2" fill="#0891b2"></rect>
+                  <rect x="50" y="2" width="12" height="36" rx="2" fill="#00bcd4"></rect>
+                  <rect x="66" y="8" width="12" height="30" rx="2" fill="#06b6d4"></rect>
+                </svg>
+              </div>
+
+              <div class="item">
+                <div class="val">ARPU</div>
+                <div class="small">Regional ARPU trends</div>
+                <svg class="sparkline" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
+                  <polyline points="0,18 12,16 24,14 36,12 48,10 60,12 72,9 84,8 96,6" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                </svg>
+              </div>
+
+              <div class="item">
+                <div class="val">CapEx</div>
+                <div class="small">CapEx vs revenue</div>
+                <svg class="bar-chart" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
+                  <rect x="6" y="16" width="12" height="22" rx="2" fill="#f59e0b"></rect>
+                  <rect x="28" y="10" width="12" height="28" rx="2" fill="#fb923c"></rect>
+                  <rect x="50" y="6" width="12" height="32" rx="2" fill="#fb7d49"></rect>
+                  <rect x="72" y="12" width="12" height="26" rx="2" fill="#f97316"></rect>
+                </svg>
+              </div>
+            </div>
+            <div class="source small" style="margin-top:8px">Sample visuals — replace with real data charts on request</div>
+          </div>
+
+          <div class="card">
+            <h3>Executive Poll</h3>
+            <div class="summary">One strategic question per edition: e.g., "Is AI creating a sustainable competitive advantage for your organisation?" (Interactive poll placeholder)</div>
+          </div>
+
+          <div class="card">
+            <h3>Upcoming Events</h3>
+            <div class="summary">MWC Barcelona, MWC Las Vegas, DTW (TM Forum), Telecoms World Asia, India Mobile Congress — include dates and recommended sessions for executives.</div>
+          </div>
+
+          <div class="card">
+            <h3>Quote of the Month</h3>
+            <div class="summary">Powerful quote from a CEO, analyst or futurist to close the dashboard.</div>
+          </div>
+        </section>
+
+        <!-- M&A -->
+        <section id="ma" class="panel" style="display:none">
+          <div class="card">
+            <h3>Deal spotlight — Vodafone & OXG (Drahi)</h3>
+            <div class="meta">Impact: Regional consolidation | Source: Mobile World Live</div>
+            <div class="summary">Vodafone braces for a €1B hit tied to the Drahi OXG deal — a reminder that consolidation continues to reprice operator balance sheets. Expect short-term headline impairments but longer-term network rationalisation and scale benefits in core markets.</div>
+            <img class="article-image" src="https://www.mobileworldlive.com/cdn-cgi/image/f=auto,w=800/https://assets.mobileworldlive.com/wp-content/uploads/2025/02/04113324/MWL_Vodafone_Germany_647.jpg" alt="Vodafone image">
+            <div class="source">Read more: <a class="source-link" href="https://www.mobileworldlive.com/vodafone/vodafone-to-take-e1b-hit-from-drahi-oxg-deal/" target="_blank">Mobile World Live</a></div>
+          </div>
+
+          <div class="grid-list">
+            <div class="card">
+              <h3>Strategic M&A themes</h3>
+              <div class="summary">- Operators target vertical capabilities (edge/cloud, AI stacks) rather than pure spectrum; vendors hunt scale across software and services.<br>- Deals increasingly priced on software IP and data/AI assets rather than only physical infrastructure.</div>
+              <div class="source small">Synthesis of: LightReading, Fierce Network, Telecoms.com</div>
+            </div>
+
+            <div class="card">
+              <h3>What execs should watch</h3>
+              <ul class="small">
+                <li>Regulatory scrutiny on large cross-border telco deals remains elevated.</li>
+                <li>Inorganic growth used to accelerate AI/automation capabilities in operations.</li>
+                <li>Integration risk: cultural and legacy OSS/BSS consolidation.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI & Automation -->
+        <section id="ai" class="panel" style="display:none">
+          <div class="card">
+            <h3>Sovereign AI & operator strategies</h3>
+            <div class="meta">Source: Fierce Network, NVIDIA, AWS, Microsoft</div>
+            <div class="summary">Operators pursue sovereign AI to control data and latency — building capability stacks (model hosting, inference at the edge) while partnering with cloud and GPU vendors. Bell’s approach: build the orchestration shell, partner for chips — a pattern other operators may replicate to retain control and manage vendor lock-in.</div>
+            <div class="kpi" style="margin-top:10px">
+              <div class="item"><div class="val">Edge AI</div><div class="small">Real-time inference & low-latency services</div></div>
+              <div class="item"><div class="val">Autonomous Ops</div><div class="small">AI agents for fault detection & orchestration</div></div>
+            </div>
+            <div class="source">Vendor notes: <a class="source-link" href="https://www.nvidia.com/en-us/industries/telecommunications/" target="_blank">NVIDIA</a> • <a class="source-link" href="https://aws.amazon.com/telecom" target="_blank">AWS</a></div>
+          </div>
+
+          <div class="card">
+            <h3>AI adoption — concise takeaways</h3>
+            <div class="summary">1) Prioritise use-cases with clear ROI: network optimisation, predictive maintenance, customer care automation. 2) Start with hybrid cloud + on-prem model hosting for sovereignty and low latency. 3) Invest in data pipelines and model ops — people and process are the gating factor, not just GPUs.</div>
+            <div class="source small">Based on industry vendor and analyst guidance (NVIDIA, AWS, Microsoft blog trends, RCR Wireless)</div>
+          </div>
+        </section>
+
+        <!-- Financial -->
+        <section id="finance" class="panel" style="display:none">
+          <div class="card">
+            <h3>Quarterly & market snapshot</h3>
+            <div class="meta">Data sources: GSMA Intelligence, Telegeography, Capacity</div>
+            <div class="summary">Global operator revenues show mixed growth: mature-market ARPU compression vs emerging-market subscriber expansion. CapEx focus remains on 5G densification and fibre buildouts, while M&A and spectrum costs skew near-term free cash flow.</div>
+            <div style="margin-top:10px" class="kpi">
+              <div class="item"><div class="val">CapEx Pressure</div><div class="small">5G & fibre investments</div></div>
+              <div class="item"><div class="val">ARPU</div><div class="small">Slow growth in developed markets</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Executive actions</h3>
+            <div class="summary">- Reassess portfolio returns: divest non-core assets and prioritise high-margin enterprise services. - Monetise data and network intelligence via new B2B offers. - Prepare contingency for integration costs from announced deals.</div>
+            <div class="source small">Synthesis: GSMA Intelligence, CapacityMedia</div>
+          </div>
+        </section>
+
+        <!-- Technical Trends -->
+        <section id="tech" class="panel" style="display:none">
+          <div class="card">
+            <h3>5G evolution & standards</h3>
+            <div class="meta">Sources: 3GPP, ITU, Ericsson Mobility Report</div>
+            <div class="summary">5G continues to expand across three vectors: eMBB, mMTC and URLLC. Workstreams progress on 5G-Advanced and early 6G research; standardisation remains coordinated through 3GPP and ITU. Operators focus on slicing, private networks and enterprise vertical integrations.</div>
+            <div class="source small">See 3GPP • ITU • Ericsson Mobility Report</div>
+          </div>
+
+          <div class="card">
+            <h3>Network cloudification & interoperability</h3>
+            <div class="summary">Open RAN and cloud-native core deployments continue to mature; vendor interoperability tests and OSS/BSS portability are the current friction points. Expect more vendor partnerships and neutral-host models in dense markets.</div>
+            <div class="source small">Sources: TelecomTV, LightReading, RCR Wireless</div>
+          </div>
+
+          <div class="card">
+            <h3>Regulation & market structure</h3>
+            <div class="summary">EU regulatory moves (e.g., social media rules for children) and national data-centre planning shifts (e.g., Scotland) influence telco service strategies and infrastructure planning — compliance will shape product rollouts and partnership models.</div>
+            <div class="source small">Sources: Mobile World Live, Capacity</div>
+          </div>
+        </section>
+
+        <!-- Sources -->
+        <section id="sources" class="panel" style="display:none">
+          <div class="card">
+            <h3>Sources used (user-provided list)</h3>
+            <div class="summary">The newsletter summarises reporting and analysis from the following sites (as provided):</div>
+            <ul class="small" style="margin-top:8px">
+              <li><a class="source-link" href="https://www.lightreading.com" target="_blank">LightReading</a></li>
+              <li><a class="source-link" href="https://www.fierce-network.com" target="_blank">Fierce Network</a></li>
+              <li><a class="source-link" href="https://telecoms.com" target="_blank">Telecoms.com</a></li>
+              <li><a class="source-link" href="https://totaltele.com" target="_blank">Total Telecom</a></li>
+              <li><a class="source-link" href="https://www.mobileworldlive.com" target="_blank">Mobile World Live</a></li>
+              <li><a class="source-link" href="https://www.rcrwireless.com" target="_blank">RCR Wireless</a></li>
+              <li><a class="source-link" href="https://www.telecomtv.com" target="_blank">TelecomTV</a></li>
+              <li><a class="source-link" href="https://www.capacitymedia.com" target="_blank">Capacity Media</a></li>
+              <li><a class="source-link" href="https://www.telegeography.com" target="_blank">Telegeography</a></li>
+              <li><a class="source-link" href="https://www.gsmaintelligence.com" target="_blank">GSMA Intelligence</a></li>
+              <li><a class="source-link" href="https://omdia.tech.informa.com" target="_blank">Omdia</a></li>
+              <li><a class="source-link" href="https://www.analysysmason.com" target="_blank">Analysys Mason</a></li>
+              <li><a class="source-link" href="https://www.delloro.com" target="_blank">Dell'Oro</a></li>
+              <li><a class="source-link" href="https://www.tmforum.org" target="_blank">TM Forum</a></li>
+              <li><a class="source-link" href="https://www.gsma.com" target="_blank">GSMA</a></li>
+              <li><a class="source-link" href="https://www.3gpp.org" target="_blank">3GPP</a></li>
+              <li><a class="source-link" href="https://www.itu.int" target="_blank">ITU</a></li>
+              <li><a class="source-link" href="https://www.ericsson.com/en/reports-and-papers/mobility-report" target="_blank">Ericsson Mobility Report</a></li>
+              <li><a class="source-link" href="https://www.nokia.com" target="_blank">Nokia Thought Leadership</a></li>
+              <li><a class="source-link" href="https://blogs.microsoft.com/industry-blog/telecommunications" target="_blank">Microsoft Telecoms Blog</a></li>
+              <li><a class="source-link" href="https://www.nvidia.com/en-us/industries/telecommunications" target="_blank">NVIDIA — Telecom</a></li>
+              <li><a class="source-link" href="https://aws.amazon.com/telecom" target="_blank">AWS — Telecom</a></li>
+            </ul>
+
+            <div class="small" style="margin-top:8px">Notes: Some sites include paywalled reports or require subscriptions for full articles. Summaries above are executive syntheses derived from accessible headlines, vendor pages and analyst public notes from the list provided.</div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="sidebar">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="22" height="22" rx="4" fill="#051226" stroke="#08314a"/></svg>
+          <div>
+            <div style="font-weight:700">Snapshot</div>
+            <div class="small">Quick signals for executive decisions</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="small">Top signal</div>
+          <div style="font-weight:700;margin-top:6px">AI-driven ops & sovereign stacks</div>
+          <div class="small" style="margin-top:8px">Operators balance sovereignty with cloud efficiency — partnership-first model with GPU/cloud vendors while retaining orchestration and data control.</div>
+        </div>
+
+        <div class="card">
+          <div class="small">Risk radar</div>
+          <ul class="small" style="margin-top:8px">
+            <li>Integration costs from M&A</li>
+            <li>CapEx vs free-cash-flow pressure</li>
+            <li>Regulatory / data-sovereignty constraints</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="small">Action checklist</div>
+          <ol class="small" style="margin-top:8px">
+            <li>Prioritise AI/edge pilots with measurable ROI</li>
+            <li>Stress-test M&A synergies & integration plan</li>
+            <li>Review spectrum & CapEx timelines vs cash-flow</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <div class="small">Custom Editions & Visuals</div>
+          <div class="summary" style="margin-top:8px">Region-specific editions (EMEA / APAC / Americas), or<br>- Additional visuals (charts from GSMA, Ericsson data) — say which and whether to include sample charts (I can fetch specific report excerpts or build charts from open data).</div>
+        </div>
+
+        <div class="card">
+          <div class="small">Attachments</div>
+          <div class="summary" style="margin-top:8px;word-break:break-word">#attachment:Pasted text #1</div>
+        </div>
+
+        <div style="margin-top:12px;text-align:center" class="small">Prepared from public headlines and vendor materials supplied by the user.</div>
+      </aside>
+    </div>
+
+    <footer>
+      Generated: 2026-09-17 — For full articles, follow the source links. If you want a PDF or customised version for a board pack, request export or tailoring by region. Region-specific editions (EMEA / APAC / Americas), or - Additional visuals (charts from GSMA, Ericsson data) — say which and whether to include sample charts (I can fetch specific report excerpts or build charts from open data).
+    </footer>
+  </div>
+
+  <script>
+    // Tab switching
+    const tabs = document.querySelectorAll('nav.tabs button');
+    const panels = document.querySelectorAll('.panel');
+    tabs.forEach(t=>t.addEventListener('click', ()=>{
+      tabs.forEach(b=>b.classList.remove('active'));
+      t.classList.add('active');
+      const id = t.getAttribute('data-tab');
+      panels.forEach(p=>{p.style.display = p.id===id? 'block' : 'none'});
+      window.scrollTo({top:0,behavior:'smooth'});
+    }));
+
+    // simple read-more toggles (if needed later)
+    document.querySelectorAll('.read-more').forEach(btn=>btn.addEventListener('click',e=>{
+      const p = e.target.previousElementSibling; p.style.maxHeight = p.style.maxHeight? null : 'none';
+      e.target.textContent = e.target.textContent === 'Read more' ? 'Show less' : 'Read more';
+    }));
+  </script>
+</body>
+</html>
