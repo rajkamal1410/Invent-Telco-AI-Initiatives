@@ -1,0 +1,153 @@
+The Intelligent Telco: Monetizing Data in the AI Era
+
+For decades, telecom operators have built and operated the infrastructure that powers the digital economy. They connect billions of people and devices through voice, messaging and data services. Yet much of the value created above that connectivity has historically been captured by digital platforms, hyperscalers and application companies.
+
+AI changes that equation.
+
+This is not just another technology upgrade for telcos. It is a chance to rethink what they are and what they can sell. The opportunity is not simply to add more data features or sell more connectivity. The bigger opportunity is to turn network signals, identity capabilities, mobility patterns and customer insight into trusted intelligence products that solve real business problems.
+
+The key point is this: telcos do not need to become data brokers in the old sense. They need to become intelligence providers.
+
+That shift matters because the real value is no longer in raw connectivity alone. It is in the differentiated signals created by being in the middle of the network.
+
+Take identity as an example. Mobile operators know more than most about who is using a device and how that device is behaving on the network. They have trusted relationships with customers and access to network-originated signals that other digital businesses often do not. This creates a meaningful commercial opportunity, especially in authentication, fraud prevention and trust services.
+
+The same is true for enterprise intelligence. Operators have visibility into movement patterns, coverage quality, service performance and network behaviour. That information can be converted into practical insights for retailers, logistics companies, transport planners, public agencies and other enterprises. This is a much stronger proposition than trying to sell raw customer data. It is smarter, safer and more commercially defensible.
+
+That is why I see telco data monetization evolving in a few directions.
+
+First, operators can improve their own internal efficiency and customer outcomes with AI. This is the easiest starting point and the cleanest foundation. The work here helps build the data quality, governance and organisational maturity needed for more advanced external monetization.
+
+Second, operators can productize their differentiated network capabilities through APIs. Third, they can package identity and fraud intelligence as a trusted service. Fourth, they can build enterprise-facing insights around mobility and network behaviour. These are all stronger choices than relying on legacy models based on selling basic customer data.
+
+One of the most important levers is network APIs.
+
+Operators have long had valuable network capabilities sitting inside their systems, but many of them were never monetized because they were built for internal operations, not external products. That is changing. GSMA Open Gateway is helping create a common framework for exposing network capabilities to developers and cloud providers. The API portfolio includes Number Verification, SIM Swap, Device Swap, KYC-related capabilities, location verification, Quality on Demand, device status and edge-related capabilities.
+
+This matters because it turns the telco network from a connectivity product into a programmable business platform. That is a very different strategic position.
+
+A strong example is in the US market. AT&T, T-Mobile and Verizon have worked through Aduna to make standardized Number Verification and SIM Swap APIs available for authentication and fraud prevention use cases. In February 2026, AT&T described the launch of standardized 5G network APIs through its partnership with Aduna, building on earlier identity and verification capabilities. The idea is that developers can use network intelligence for identity verification and fraud-related applications without needing direct access to underlying customer data.
+
+The monetization opportunity here is broader than traditional connectivity. APIs allow operators to take internal network capabilities and turn them into reusable products consumed by enterprises and developers. That is exactly the kind of shift that can improve the economics of the telecom business.
+
+Identity, authentication and fraud intelligence may be one of the clearest examples of why telecom intelligence has value.
+
+Operators have a trusted relationship with devices and subscriptions. They are deeply embedded in how a customer accesses services and how a device behaves on the network. That gives them signals that other digital businesses may not have.
+
+Standardized APIs can expose selected signals without exposing the underlying customer information. Number Verification can help confirm whether a mobile number is associated with the device being used. SIM Swap can show whether a SIM has recently changed. GSMA’s Open Gateway portfolio also includes Device Swap and several KYC-related capabilities.
+
+This creates a strong value proposition for financial services, e-commerce and digital businesses where identity trust and fraud prevention have real economic value. AT&T has explicitly described fraud prevention and identity verification as central use cases for its network API strategy.
+
+The commercial principle is important: the operator is productizing a trusted network signal, not selling identifiable customer information. That distinction is crucial. It is safer, more scalable and much more aligned with privacy expectations and regulatory scrutiny.
+
+Another important opportunity is enterprise data and mobility intelligence.
+
+This is where operators can transform aggregated network information into decision-support products for businesses. Vodafone Analytics is a strong example. The platform uses telecommunications and location information to provide enterprise insights in areas such as retail, real estate, logistics, outdoor media and the public sector. According to Vodafone, the datasets are anonymized and aggregated, and the platform can support use cases such as understanding people flows, informing branch-location decisions and analysing geographic customer behaviour.
+
+This is a more defensible version of data monetization than making broad claims that AI will automatically manage regulatory compliance. It also shows a more realistic value path: operators create business insights rather than selling raw data.
+
+Telefónica Tech’s Mobility Insights is another strong case. It combines anonymized information from Telefónica’s network with other data sources to support mobility and transportation analysis, including origin-destination analysis, travel-demand assessment and infrastructure planning. The offering uses Big Data and AI techniques and demonstrates how network-derived information can be turned into an enterprise intelligence product serving transport and related sectors.
+
+Taken together, these examples show a broader opportunity: telcos can provide decision intelligence that helps enterprises plan, measure and operate more effectively.
+
+Advertising remains relevant, but I do not see it as the whole story. It is important, but only one part of the wider landscape.
+
+Advertising is a meaningful pathway for operators with large customer footprints or media and ad-tech assets. AI can support audience segmentation, campaign optimisation, measurement and attribution. Telco-derived insights may also enable more relevant audience propositions where consent, privacy and regulatory controls are in place.
+
+However, advertising should be viewed as one element of a much larger intelligence monetization model, alongside network APIs, identity, fraud prevention and enterprise intelligence.
+
+T-Mobile’s move into the ad-tech space is a useful example. In 2025, T-Mobile acquired Vistar Media, bringing in technology for buying, selling and managing digital-out-of-home campaigns. At the time of the announcement, Vistar’s platform covered a global network of more than 1.1 million digital screens from nearly 370 out-of-home media owners. That is a much better example than relying on historical audience reach figures that may change over time.
+
+Comcast is another strong case. FreeWheel provides media-buying technology for publishers, advertisers and ad buyers, supporting transactions across streaming, connected TV and multiscreen environments. Comcast Advertising describes FreeWheel as its programmatic AdTech arm for multiscreen television advertising, alongside data and measurement capabilities. In October 2025, Comcast also announced a programmatic linear-TV capability through FreeWheel’s Buyer Cloud, allowing targetable linear inventory to be bought alongside digital inventory.
+
+These examples illustrate how operators and operator-adjacent media businesses can combine data, technology, inventory and measurement to capture value beyond connectivity. It is a real business model, but it is not the only one.
+
+Rakuten offers an even more interesting angle because its ecosystem extends far beyond telecom. Rakuten spans e-commerce, payments, financial services, travel and other consumer services. That creates a different strategic model from a conventional telco.
+
+Rather than making unsupported claims that telecom data is currently being used specifically for credit scoring or identity verification, the more important point is the ecosystem advantage created by connecting data and AI across multiple business domains. Rakuten has described an AI strategy built around unifying data across roughly 70 businesses, supported by a common Rakuten ID. The company positions this integrated first-party data environment as an important input to its AI strategy.
+
+There is also evidence of actual agentic AI deployment within the ecosystem. In July 2025, Rakuten Group and Rakuten Mobile announced the full-scale launch of Rakuten AI, an AI agent initially integrated into Rakuten Link and intended to connect users with services across the wider Rakuten ecosystem.
+
+This makes Rakuten a compelling example of how telecom combined with a broader digital ecosystem can create new possibilities for AI-driven engagement without requiring unsupported claims about specific financial-use cases. In my view, this is where telcos with ecosystem breadth can create structural advantages that a standalone operator may not be able to replicate.
+
+I also think we need to separate what AI is doing today from what it could do next.
+
+Agentic AI should currently be framed as an emerging opportunity rather than a universally deployed telco capability. Unlike conventional analytical AI, AI agents have the potential to plan, coordinate and execute multi-step activities across systems. That could eventually change several monetization processes.
+
+In banking and fintech, network APIs already support authentication and fraud prevention through capabilities like Number Verification and SIM Swap. In the future, governed AI agents could orchestrate fraud-management workflows across multiple signals and systems, escalating high-risk decisions to humans.
+
+In retail, aggregated mobility insights can already help enterprises understand movement and demand patterns. Vodafone explicitly positions its analytics capability for use cases such as branch-location decisions and understanding consumer behaviour around stores. In the future, AI agents could combine mobility, inventory, campaign and contextual signals to dynamically recommend or optimise customer engagement.
+
+In logistics and mobility, mobility intelligence can support travel-demand analysis and infrastructure planning, as shown by Telefónica Tech. Future-state agentic systems could coordinate mobility intelligence with logistics and operational systems to optimise decisions dynamically.
+
+In network services, APIs already make selected network capabilities programmable. Future-state enterprise AI agents could request network capabilities such as service quality or edge resources dynamically according to application requirements and predefined commercial policies.
+
+This is where AI agents, standardized APIs and programmable networks become especially interesting. But autonomy should never mean removing accountability. That is a key principle.
+
+Trust and governance must become part of the product itself.
+
+The value of telecom intelligence ultimately depends on trust. As operators move from using AI internally to exposing intelligence externally, governance cannot be treated as a regulatory checkpoint at the end of the process. It has to be designed into the architecture and operating model of the product.
+
+Several areas are particularly important.
+
+First is data quality. AI systems and intelligence products are only as reliable as the information feeding them. Operators therefore need mechanisms to manage data provenance, accuracy, consistency and lifecycle.
+
+Second is privacy, purpose and consent. Operators need clearly defined rules about what information can be used, for what purpose, under which permissions and for how long. Consent and preference management need to be traceable and auditable where applicable.
+
+Importantly, AI does not guarantee privacy compliance. Privacy has to be established through governance, data architecture, anonymisation or aggregation where appropriate, access control and accountability at the organisational level.
+
+Third is model governance. Models supporting commercially or operationally important decisions require validation, monitoring and clearly defined ownership.
+
+Fourth is cybersecurity. Exposing more network capabilities through APIs expands the digital interface between operator systems and external ecosystems. Strong authentication, authorisation, monitoring and security controls become essential.
+
+Fifth is explainability and traceability. As AI starts taking actions rather than simply making recommendations, operators will need to understand why actions were taken and maintain traceability of decisions.
+
+Sixth is human accountability. This becomes especially important for agentic AI.
+
+Orange’s Data and AI Ethical Charter is a useful example. It explicitly includes respect for human autonomy and supervision, privacy protection, resilience and security, transparency and a clear chain of responsibility. Orange also maintains an independent Data and AI Ethics Council. Similarly, Deutsche Telekom states that its responsible-AI approach includes privacy by design and a governance structure involving steering, technical and regulatory authorities.
+
+This is the more appropriate role of AI governance. AI should operate within a compliance and accountability framework, rather than being described as autonomously “ensuring compliance.”
+
+In my view, the next phase of telco data monetization is likely to be shaped by a convergence of several shifts.
+
+Network APIs become commercial products. Standardized interfaces can turn previously inaccessible network capabilities into services that enterprises and developers can integrate directly into their applications. But standardization alone will not be enough. Operators need to package these capabilities around specific industry problems with clear economic value.
+
+Identity and fraud emerge as differentiated assets. Number Verification, SIM Swap, device information and KYC-related capabilities show how operators can create value from trusted network intelligence without exposing underlying raw customer data.
+
+Enterprise intelligence expands beyond advertising. Mobility intelligence from Vodafone and Telefónica shows that network-derived data products can support planning, transport, retail and other enterprise needs.
+
+Programmable networks meet AI. As network capabilities become accessible through APIs, AI could increasingly decide when and how capabilities are consumed, creating a foundation for more adaptive, outcome-based services.
+
+Agentic AI increases automation, but it also raises the governance bar. There are signs of this transition. Deutsche Telekom, for example, described in 2026 how it was incorporating lessons from agentic AI trials and deployments into its AI-centric architecture, while emphasizing governance and explainability of agent decisions.
+
+The critical point is therefore not that telcos will suddenly become fully autonomous enterprises. Rather, AI autonomy can increase progressively as operators prove that individual workflows are reliable, explainable and appropriately controlled.
+
+My point of view is straightforward: telecom operators have an opportunity to move beyond being connectivity-centric providers, but the next growth engine is unlikely to come from selling data alone.
+
+The larger opportunity is to transform differentiated network signals, identity capabilities, mobility information and customer insights into trusted intelligence products that solve measurable business problems. Advertising is one monetization pathway, but network APIs, authentication and fraud prevention, mobility intelligence, enterprise analytics and programmable network capabilities broaden the addressable opportunity significantly.
+
+For operators, I see a four-step path.
+
+First, prove value internally. Start with customer, network and operational use cases where AI can generate measurable revenue improvement, customer outcomes or cost efficiency. This establishes the data foundations, governance capability and organisational experience needed for more sophisticated external monetization.
+
+Second, build privacy and governance into the foundation. Trust should not be an afterthought. Data quality, privacy, security, consent, model governance, explainability and human accountability need to be incorporated from the beginning. The approaches taken by Orange and Deutsche Telekom show how responsible AI principles can be institutionalised through formal governance frameworks.
+
+Third, productize differentiated network intelligence. The strongest opportunities will emerge where operators possess something truly differentiated. Identity signals, SIM-swap intelligence, device information, mobility patterns, network quality and programmable connectivity are all examples of capabilities that arise directly from the operator’s position in the network.
+
+Rather than asking, “What data can we sell?” operators should ask, “What business decision or outcome can our network intelligence improve, and how can we package that capability as a repeatable product?” That mindset shift is fundamental.
+
+Fourth, scale through ecosystems and industry partnerships. No operator will build every application on top of these capabilities. Initiatives such as GSMA Open Gateway and Aduna illustrate an emerging model in which standardized interfaces make network capabilities accessible across operators and developer ecosystems.
+
+The strategic opportunity therefore moves beyond selling connectivity toward participating in a broader intelligence ecosystem.
+
+In conclusion, AI is changing the economics of telco data monetization, but AI itself is not the product. The real product is the trusted intelligence, capability or business outcome that AI helps the operator create.
+
+For some operators, that may be mobility intelligence. For others, it may be identity and fraud prevention, network APIs, advertising, programmable connectivity or differentiated enterprise services. Operators with broader digital ecosystems may have additional opportunities to combine telecom intelligence with commerce, financial services and digital experiences.
+
+Agentic AI could eventually amplify this opportunity by orchestrating decisions and services across these domains. But the introduction of agentic AI needs to be progressive and governed, with clear boundaries between what AI can recommend, what it can execute autonomously and where human oversight remains mandatory.
+
+The industry’s evolution can therefore be viewed as a progression:
+
+Connectivity → Data → Insights → Intelligence Products → Programmable Capabilities → AI-Orchestrated Ecosystems
+
+The operators that succeed will not simply be those with the most data or the most AI models. They will be the operators that can turn trusted network intelligence into repeatable, scalable and measurable customer value.
