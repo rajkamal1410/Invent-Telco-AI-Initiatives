@@ -94,12 +94,12 @@ const documents = [
     id: 'invent-tmt',
     title: 'Invent India TMT Monthly Update',
     type: 'Presentation',
-    category: 'Performance Dashboard',
+    category: 'AI, Data Monetization & Telco Intelligence',
     path: 'source-materials/202607_Invent India Telco Media & Tech July 2026 Updates.pptx',
     fileType: 'pptx',
-    summary: 'This deck summarizes monthly TMT performance across bookings, pipeline, revenue, and account coverage, with a focus on market priorities and action points. It highlights the areas needing closure acceleration, resource deployment, and pipeline health management.',
-    overview: 'The presentation combines leadership dashboard analytics, segment performance, and operational actions for telecom media and tech growth tracking.',
-    keywords: ['TMT', 'July 2026', 'booking', 'pipeline', 'ARVE', 'inter CM', 'accounts', 'performance dashboard'],
+    summary: 'This deck reframes the TMT opportunity through the lens of AI-led telco strategy, network monetization, enterprise intelligence, and execution discipline. It links monthly performance indicators with strategic themes such as network APIs, mobility intelligence, data productization, and governance so the library reflects both business performance and market direction.',
+    overview: 'A strategic monthly TMT update that connects performance metrics with AI-driven telco growth themes, monetization opportunities, and governance-led execution.',
+    keywords: ['TMT', 'AI', 'data monetization', 'network APIs', 'enterprise intelligence', 'governance', 'July 2026', 'performance dashboard'],
     poc: 'TMT Practice Lead',
     contact: 'Telecom Media & Tech performance team'
   },
@@ -107,12 +107,12 @@ const documents = [
     id: 'rakuten-data-monetization',
     title: 'Rakuten Mobile Data Monetization Use Cases',
     type: 'Use Case Deck',
-    category: 'Data Monetization',
+    category: 'AI, Data Monetization & Telco Intelligence',
     path: 'source-materials/Rakuten Mobile - Telco Data Monetization use cases (1).pptx',
     fileType: 'pptx',
-    summary: 'This deck covers monetization opportunities using telecom data, customer insights, and analytics-driven use cases such as productization and platform-enabled value creation. It frames the practical business scenarios behind data-led monetization and ecosystem leverage.',
-    overview: 'A strategic use-case deck on telco data monetization, analytics value, and productization for next-generation telecom business models.',
-    keywords: ['Rakuten', 'data monetization', 'telecom data', 'use cases', 'analytics', 'platform', 'AI'],
+    summary: 'This deck translates telco data into commercially relevant use cases across identity, fraud prevention, enterprise intelligence, and ecosystem-driven product design. It brings in the strategic lens of AI, first-party data, and ecosystem value creation, making it especially relevant to the emerging telco monetization agenda.',
+    overview: 'A strategic use-case deck on AI-enabled telco data monetization, analytics value, ecosystem leverage, and productization for next-generation telecom business models.',
+    keywords: ['Rakuten', 'data monetization', 'telecom data', 'use cases', 'analytics', 'platform', 'AI', 'network APIs', 'identity', 'fraud prevention'],
     poc: 'Data Monetization & Analytics Lead',
     contact: 'Telco data and monetization practice'
   },
@@ -205,8 +205,8 @@ const libraryAreas = [
     description: 'Booking trends, TMT KPIs, account coverage, and operational health views.'
   },
   {
-    title: 'Data monetization and use cases',
-    description: 'Telco data opportunity framing, analytical business cases, and monetization principles.'
+    title: 'AI, data monetization and network intelligence',
+    description: 'Telco data opportunity framing, network APIs, enterprise intelligence, and AI-enabled monetization principles.'
   }
 ];
 
