@@ -205,6 +205,10 @@ const libraryAreas = [
     description: 'Booking trends, TMT KPIs, account coverage, and operational health views.'
   },
   {
+    title: 'AI-assisted research and synthesis',
+    description: 'Knowledge discovery, analogue finding, insight synthesis, and strategic pattern recognition for faster TMT decisions.'
+  },
+  {
     title: 'AI, data monetization and network intelligence',
     description: 'Telco data opportunity framing, network APIs, enterprise intelligence, and AI-enabled monetization principles.'
   }
@@ -262,7 +266,7 @@ function renderAreaList() {
 }
 
 function renderSuggestedTags() {
-  const tags = ['RFP', 'Orange', 'Maxis', 'AI', 'TMT', 'sales transformation', 'data monetization', 'digital transformation'];
+  const tags = ['RFP', 'Orange', 'Maxis', 'AI', 'TMT', 'AI copilot', 'knowledge synthesis', 'analogue search', 'sales transformation', 'data monetization', 'digital transformation', 'governance'];
   suggestedTags.innerHTML = tags.map(tag => `<button class="tag" type="button">${tag}</button>`).join('');
 
   suggestedTags.querySelectorAll('.tag').forEach((tag) => {
