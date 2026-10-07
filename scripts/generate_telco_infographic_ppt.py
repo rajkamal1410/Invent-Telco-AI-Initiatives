@@ -6,7 +6,7 @@ from pptx.dml.color import RGBColor
 from pptx.enum.dml import MSO_THEME_COLOR
 
 
-OUT = r"c:\Users\rajkamaa\Downloads\AI exercises\pages\newsletters\The Intelligent Telco Infographic Presentation.pptx"
+OUT = r"c:\Users\rajkamaa\Downloads\AI exercises\deliverables\intelligent-telco\The Intelligent Telco Infographic Presentation.pptx"
 
 prs = Presentation()
 prs.slide_width = Inches(13.333)
