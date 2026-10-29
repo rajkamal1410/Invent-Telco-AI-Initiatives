@@ -91,19 +91,6 @@ const documents = [
     contact: 'Engineering and solution architecture practice'
   },
   {
-    id: 'invent-tmt',
-    title: 'Invent India TMT Monthly Update',
-    type: 'Presentation',
-    category: 'AI, Data Monetization & Telco Intelligence',
-    path: 'source-materials/202607_Invent India Telco Media & Tech July 2026 Updates.pptx',
-    fileType: 'pptx',
-    summary: 'This deck reframes the TMT opportunity through the lens of AI-led telco strategy, network monetization, enterprise intelligence, and execution discipline. It links monthly performance indicators with strategic themes such as network APIs, mobility intelligence, data productization, and governance so the library reflects both business performance and market direction.',
-    overview: 'A strategic monthly TMT update that connects performance metrics with AI-driven telco growth themes, monetization opportunities, and governance-led execution.',
-    keywords: ['TMT', 'AI', 'data monetization', 'network APIs', 'enterprise intelligence', 'governance', 'July 2026', 'performance dashboard'],
-    poc: 'TMT Practice Lead',
-    contact: 'Telecom Media & Tech performance team'
-  },
-  {
     id: 'rakuten-data-monetization',
     title: 'Rakuten Mobile Data Monetization Use Cases',
     type: 'Use Case Deck',
@@ -115,46 +102,33 @@ const documents = [
     keywords: ['Rakuten', 'data monetization', 'telecom data', 'use cases', 'analytics', 'platform', 'AI', 'network APIs', 'identity', 'fraud prevention'],
     poc: 'Data Monetization & Analytics Lead',
     contact: 'Telco data and monetization practice'
-  },
-  {
-    id: 'tmt-newsletter',
-    title: 'TMT July 2026 Newsletter',
-    type: 'Newsletter',
-    category: 'Executive Summary',
-    path: 'source-materials/TMT_July_2026_Newsletter.pdf',
-    fileType: 'pdf',
-    summary: 'The newsletter condenses the key monthly updates, highlights, and executive actions from the TMT performance review into a briefing format. It is useful for quick stakeholder communication and summary sharing.',
-    overview: 'An executive-ready summary that captures progress trends, KPI signals, market focus areas, and the actions needed to improve pipeline and delivery health.',
-    keywords: ['newsletter', 'TMT', 'monthly update', 'summary', 'pipeline', 'performance'],
-    poc: 'Knowledge Management Lead',
-    contact: 'Internal communications / insight desk'
   }
 ];
 
 const newUploadDocuments = [
-  ['c-and-w-panama-rfp', 'C&W Panama RFP - IT Strategic Assessment', 'RFP Response', 'IT Strategy & Assessment', 'OneDrive_2026-09-22 (1)/March Uploads/C&W Panana RFP - IT Strategic Assessment Final  06Sep25.pptx', ['C&W Panama', 'IT strategic assessment', 'RFP', 'telecom', 'IT strategy']],
-  ['stc-ebu-process', 'stc eBU Process Implementation & Quality Assurance Approach', 'Proposal', 'eBU Process & Quality Assurance', 'OneDrive_2026-09-22 (1)/March Uploads/stc eBU_Process Implementation & Quality Assurance Approach_V0.1.pptx', ['stc', 'eBU', 'process implementation', 'quality assurance', 'telecom']],
-  ['tnb-allo-proposal', 'TNB Allo Consulting Proposal', 'Proposal', 'Consulting & Telecom Strategy', 'OneDrive_2026-09-22 (1)/March Uploads/TNB - Allo Consulting Proposal_Ver3.0_080623.pptx', ['TNB', 'Allo', 'consulting proposal', 'telecom', 'strategy']],
-  ['blablacar-india', 'BlaBlaCar Indian Market Analysis Proposal', 'Proposal', 'Market Strategy & Growth', 'OneDrive_2026-09-22 (2)/Selected-Not uploaded(for march)/20230922_BlaBlaCar Indian market analysis_Proposal CGI FV (1).pptx', ['BlaBlaCar', 'India market', 'market analysis', 'proposal', 'strategy']],
-  ['bics-data-monetization', 'BICS Data Monetization Proposal Response', 'Proposal Response', 'Data Monetization & Analytics', 'OneDrive_2026-09-22 (2)/Selected-Not uploaded(for march)/BICS Data Monetization_SRG Proposal Response.pptx', ['BICS', 'data monetization', 'proposal response', 'analytics', 'telecom']],
-  ['indus-sustainability', 'Indus Towers Sustainability Upskilling Deck', 'Presentation', 'Sustainability', 'OneDrive_2026-09-22 (2)/Selected-Not uploaded(for march)/Indus Towers_Sustainability Upskilling Deck updated V3.1.pptx', ['Indus Towers', 'sustainability', 'upskilling', 'telecom', 'ESG']],
-  ['orange-newco-cpq', 'Orange Project Newco CPQ', 'Proposal', 'CPQ & Commercial Transformation', 'OneDrive_2026-09-22 (2)/Selected-Not uploaded(for march)/Orange Project Newco CPQ.pptx', ['Orange', 'Newco', 'CPQ', 'commercial transformation', 'sales']],
-  ['daily-thanthi-product', 'Daily Thanthi Product Strategy Proposal', 'Proposal', 'Product Strategy & Growth', 'OneDrive_2026-09-22 (2)/Selected-Not uploaded(for march)/Proposal_Product strategy_Daily Thanthi.pptx', ['Daily Thanthi', 'product strategy', 'proposal', 'media', 'growth']],
-  ['capgemini-pmi', 'Capgemini RFS Response - Pre-PMI IT Stream', 'RFS Response', 'IT Transformation & PMI', 'OneDrive_2026-09-22 (2)/Selected-Not uploaded(for march)/RFS Response_Pre-PMI_IT Stream_Capgemini.pptx', ['Capgemini', 'RFS', 'Pre-PMI', 'IT stream', 'transformation']],
-  ['data-landscape-linear-tv', 'Data Landscape Strategy for Linear TV', 'Strategy', 'Data Strategy', 'OneDrive_2026-09-22/April uploads/202602_Data Landscape Strategy for Linear TV_v0.1.pptx', ['data landscape', 'linear TV', 'data strategy', 'media', 'analytics']],
-  ['lla-ai-use-case', 'LLA AI Use Case Project RFP', 'RFP Response', 'AI Use Cases & Telecom Transformation', 'OneDrive_2026-09-22/April uploads/202604_LLA_AI Use Case Project_RFP_v1.0_DRAFT.pptx', ['LLA', 'AI', 'use cases', 'RFP', 'telecom']],
-  ['liberty-networks', 'Liberty Networks Proposal', 'Proposal', 'Network Transformation & Telecom', 'OneDrive_2026-09-22/April uploads/Liberty Networks 0.2.pptx', ['Liberty Networks', 'proposal', 'telecom', 'network', 'transformation']],
-  ['mnp-readiness', 'TMT Proposal - MNP Readiness Assessment Approach', 'Proposal', 'MNP Readiness & Network Transformation', 'OneDrive_2_22-9-2026/#1 TMT Proposal_MNP Readiness Assessment Approach​.pptx', ['TMT', 'MNP', 'readiness assessment', 'network', 'proposal']],
-  ['business-product-strategy', 'TMT Proposal - Business and Product Strategy', 'Proposal', 'Product & Business Strategy', 'OneDrive_2_22-9-2026/#2 TMT Proposal_Business and Product Strategy.pptx', ['TMT', 'business strategy', 'product strategy', 'telecom', 'proposal']],
-  ['architecture-coe', 'TMT Proposal - Architecture CoE', 'Proposal', 'Enterprise Architecture & CoE', 'OneDrive_2_22-9-2026/#3 TMT Proposal_Architecture CoE.pptx', ['TMT', 'architecture CoE', 'enterprise architecture', 'telecom', 'proposal']],
-  ['mobile-access-engineering', 'TMT Proposal - Mobile Access Engineering Cost Transformation', 'Proposal', 'Mobile Access Engineering & Cost Transformation', 'OneDrive_2_22-9-2026/#4 TMT Proposal_Mobile Access Engineering Cost Transformation Programme Support.pptx', ['TMT', 'mobile access', 'engineering', 'cost transformation', 'telecom']],
-  ['nbn-process-simplification', 'TMT Proposal - Capgemini nbn Process Simplification', 'Proposal', 'Process Simplification & Automation', 'OneDrive_2_22-9-2026/#5 TMT Proposal_Capgemini nbn Process Simplification.pptx', ['TMT', 'Capgemini', 'nbn', 'process simplification', 'telecom']]
+  ['c-and-w-panama-rfp', 'C&W Panama RFP - IT Strategic Assessment', 'RFP Response', 'IT Strategy & Assessment', 'customer-responses/C&W Panana RFP - IT Strategic Assessment Final  06Sep25.pptx', ['C&W Panama', 'IT strategic assessment', 'RFP', 'telecom', 'IT strategy']],
+  ['stc-ebu-process', 'stc eBU Process Implementation & Quality Assurance Approach', 'Proposal', 'eBU Process & Quality Assurance', 'proposals/stc eBU_Process Implementation & Quality Assurance Approach_V0.1.pptx', ['stc', 'eBU', 'process implementation', 'quality assurance', 'telecom']],
+  ['tnb-allo-proposal', 'TNB Allo Consulting Proposal', 'Proposal', 'Consulting & Telecom Strategy', 'proposals/TNB - Allo Consulting Proposal_Ver3.0_080623.pptx', ['TNB', 'Allo', 'consulting proposal', 'telecom', 'strategy']],
+  ['blablacar-india', 'BlaBlaCar Indian Market Analysis Proposal', 'Proposal', 'Market Strategy & Growth', 'proposals/20230922_BlaBlaCar Indian market analysis_Proposal CGI FV (1).pptx', ['BlaBlaCar', 'India market', 'market analysis', 'proposal', 'strategy']],
+  ['bics-data-monetization', 'BICS Data Monetization Proposal Response', 'Proposal Response', 'Data Monetization & Analytics', 'customer-responses/BICS Data Monetization_SRG Proposal Response.pptx', ['BICS', 'data monetization', 'proposal response', 'analytics', 'telecom']],
+  ['indus-sustainability', 'Indus Towers Sustainability Upskilling Deck', 'Presentation', 'Sustainability', 'presentations/Indus Towers_Sustainability Upskilling Deck updated V3.1.pptx', ['Indus Towers', 'sustainability', 'upskilling', 'telecom', 'ESG']],
+  ['orange-newco-cpq', 'Orange Project Newco CPQ', 'Proposal', 'CPQ & Commercial Transformation', 'proposals/Orange Project Newco CPQ.pptx', ['Orange', 'Newco', 'CPQ', 'commercial transformation', 'sales']],
+  ['daily-thanthi-product', 'Daily Thanthi Product Strategy Proposal', 'Proposal', 'Product Strategy & Growth', 'proposals/Proposal_Product strategy_Daily Thanthi.pptx', ['Daily Thanthi', 'product strategy', 'proposal', 'media', 'growth']],
+  ['capgemini-pmi', 'Capgemini RFS Response - Pre-PMI IT Stream', 'RFS Response', 'IT Transformation & PMI', 'customer-responses/RFS Response_Pre-PMI_IT Stream_Capgemini.pptx', ['Capgemini', 'RFS', 'Pre-PMI', 'IT stream', 'transformation']],
+  ['data-landscape-linear-tv', 'Data Landscape Strategy for Linear TV', 'Strategy', 'Data Strategy', 'strategy/202602_Data Landscape Strategy for Linear TV_v0.1.pptx', ['data landscape', 'linear TV', 'data strategy', 'media', 'analytics']],
+  ['lla-ai-use-case', 'LLA AI Use Case Project RFP', 'RFP Response', 'AI Use Cases & Telecom Transformation', 'customer-responses/202604_LLA_AI Use Case Project_RFP_v1.0_DRAFT.pptx', ['LLA', 'AI', 'use cases', 'RFP', 'telecom']],
+  ['liberty-networks', 'Liberty Networks Proposal', 'Proposal', 'Network Transformation & Telecom', 'proposals/Liberty Networks 0.2.pptx', ['Liberty Networks', 'proposal', 'telecom', 'network', 'transformation']],
+  ['mnp-readiness', 'TMT Proposal - MNP Readiness Assessment Approach', 'Proposal', 'MNP Readiness & Network Transformation', 'proposals/#1 TMT Proposal_MNP Readiness Assessment Approach​.pptx', ['TMT', 'MNP', 'readiness assessment', 'network', 'proposal']],
+  ['business-product-strategy', 'TMT Proposal - Business and Product Strategy', 'Proposal', 'Product & Business Strategy', 'proposals/#2 TMT Proposal_Business and Product Strategy.pptx', ['TMT', 'business strategy', 'product strategy', 'telecom', 'proposal']],
+  ['architecture-coe', 'TMT Proposal - Architecture CoE', 'Proposal', 'Enterprise Architecture & CoE', 'proposals/#3 TMT Proposal_Architecture CoE.pptx', ['TMT', 'architecture CoE', 'enterprise architecture', 'telecom', 'proposal']],
+  ['mobile-access-engineering', 'TMT Proposal - Mobile Access Engineering Cost Transformation', 'Proposal', 'Mobile Access Engineering & Cost Transformation', 'proposals/#4 TMT Proposal_Mobile Access Engineering Cost Transformation Programme Support.pptx', ['TMT', 'mobile access', 'engineering', 'cost transformation', 'telecom']],
+  ['nbn-process-simplification', 'TMT Proposal - Capgemini nbn Process Simplification', 'Proposal', 'Process Simplification & Automation', 'proposals/#5 TMT Proposal_Capgemini nbn Process Simplification.pptx', ['TMT', 'Capgemini', 'nbn', 'process simplification', 'telecom']]
 ].map(([id, title, type, category, path, keywords]) => ({
   id,
   title,
   type,
   category,
-  path: `source-materials/new-uploads/${path}`,
+  path: `source-materials/${path}`,
   fileType: 'pptx',
   summary: `${title} is an added library presentation covering ${keywords.slice(0, 3).join(', ')}. It is available as a searchable reference for proposal development, customer discussions, and strategic response planning.`,
   overview: `Newly added material focused on the solution area ${category.toLowerCase()} and related telecom or enterprise transformation priorities.`,
@@ -165,64 +139,16 @@ const newUploadDocuments = [
 
 documents.push(...newUploadDocuments);
 
-const capabilityDocuments = [
-  {
-    id: 'ai-operating-models',
-    title: 'Operating Models in the Era of AI: G2M Deck',
-    type: 'POV / Strategy',
-    category: 'AI Operating Models',
-    path: 'source-materials/org-capabilities/Operating Models in the Era of AI_G2M Deck_2026 2.pptx',
-    fileType: 'pptx',
-    summary: 'This deck explores how AI is changing operating models, go-to-market motions, and organizational design. It provides a reusable point of view for conversations about AI-enabled growth, transformation, and capability evolution.',
-    overview: 'A strategic capability reference for AI-era operating model and go-to-market transformation discussions.',
-    keywords: ['AI', 'operating models', 'G2M', 'go-to-market', 'organization design', 'transformation'],
-    poc: 'AI Transformation Practice Lead',
-    contact: 'AI and operating model capability team'
-  }
-];
-
-documents.push(...capabilityDocuments);
-
-const libraryAreas = [
-  {
-    title: 'RFP and proposal responses',
-    description: 'Customer response libraries, commercial bids, and structured solution narratives.'
-  },
-  {
-    title: 'Operating model and transformation',
-    description: 'IT mutualization, governance, shared services, and enterprise value modernization.'
-  },
-  {
-    title: 'Sales and digital enablement',
-    description: 'Sales transformation, CRM enablement, and digital productivity plays.'
-  },
-  {
-    title: 'Executive briefings and workshops',
-    description: 'Leadership reviews, strategic discussions, and senior stakeholder alignment decks.'
-  },
-  {
-    title: 'Performance and pipeline dashboards',
-    description: 'Booking trends, TMT KPIs, account coverage, and operational health views.'
-  },
-  {
-    title: 'AI-assisted research and synthesis',
-    description: 'Knowledge discovery, analogue finding, insight synthesis, and strategic pattern recognition for faster TMT decisions.'
-  },
-  {
-    title: 'AI, data monetization and network intelligence',
-    description: 'Telco data opportunity framing, network APIs, enterprise intelligence, and AI-enabled monetization principles.'
-  }
-];
-
 const searchInput = document.getElementById('searchInput');
 const resultsContainer = document.getElementById('resultsContainer');
 const resultCount = document.getElementById('resultCount');
-const areaList = document.getElementById('areaList');
 const suggestedTags = document.getElementById('suggestedTags');
+const themeSearchInput = document.getElementById('themeSearchInput');
+const themeList = document.getElementById('themeList');
 const totalDocs = document.getElementById('totalDocs');
 const totalCategories = document.getElementById('totalCategories');
 const clearBtn = document.getElementById('clearBtn');
-const searchBtn = document.getElementById('searchBtn');
+const docSearchForm = document.getElementById('docSearchForm');
 const typeFilter = document.getElementById('typeFilter');
 const sortSelect = document.getElementById('sortSelect');
 const favoritesBtn = document.getElementById('favoritesBtn');
@@ -243,26 +169,116 @@ const toolPanels = document.querySelectorAll('.tool-panel');
 const slideSearchInput = document.getElementById('slideSearchInput');
 const slideSearchBtn = document.getElementById('slideSearchBtn');
 const slideResults = document.getElementById('slideResults');
-const docFinderInput = document.getElementById('docFinderInput');
-const docFinderBtn = document.getElementById('docFinderBtn');
-const docFinderResults = document.getElementById('docFinderResults');
 const uploadInput = document.getElementById('uploadInput');
-const uploadBrowseBtn = document.getElementById('uploadBrowseBtn');
 const uploadList = document.getElementById('uploadList');
 const uploadStatus = document.getElementById('uploadStatus');
+const assistantForm = document.getElementById('assistantForm');
+const assistantQuestion = document.getElementById('assistantQuestion');
+const assistantMode = document.getElementById('assistantMode');
+const assistantResponse = document.getElementById('assistantResponse');
+const assistantSourceOptions = document.querySelectorAll('.source-option');
+const assistantSuggestions = document.querySelectorAll('.prompt-suggestion');
+let assistantSource = 'internal';
+let lastAssistantExport = null;
 let selectedDocument = null;
 let showingFavorites = false;
+let activeTheme = '';
 const favoriteIds = new Set(JSON.parse(localStorage.getItem('knowledge-library-favorites') || '[]'));
 const uploadedReferences = JSON.parse(localStorage.getItem('knowledge-library-uploads') || '[]');
-const uploadedDocuments = [];
+let uploadsDatabasePromise = null;
 
-function renderAreaList() {
-  areaList.innerHTML = libraryAreas.map(area => `
-    <li>
-      <strong>${area.title}</strong>
-      <span>${area.description}</span>
-    </li>
-  `).join('');
+function openUploadsDatabase() {
+  if (!('indexedDB' in window)) return Promise.reject(new Error('Browser file storage is unavailable.'));
+  if (uploadsDatabasePromise) return uploadsDatabasePromise;
+
+  uploadsDatabasePromise = new Promise((resolve, reject) => {
+    const request = indexedDB.open('invent-tmt-library', 1);
+    request.onupgradeneeded = () => {
+      if (!request.result.objectStoreNames.contains('uploadedFiles')) {
+        request.result.createObjectStore('uploadedFiles', { keyPath: 'id' });
+      }
+    };
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => {
+      uploadsDatabasePromise = null;
+      reject(request.error || new Error('Unable to open browser file storage.'));
+    };
+    request.onblocked = () => {
+      uploadsDatabasePromise = null;
+      reject(new Error('Browser file storage is blocked by another open library tab.'));
+    };
+  });
+  return uploadsDatabasePromise;
+}
+
+async function saveUploadedFile(record, file, hash, created) {
+  const database = await openUploadsDatabase();
+  const { path, ...metadata } = record;
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction('uploadedFiles', 'readwrite');
+    transaction.objectStore('uploadedFiles').put({
+      ...metadata,
+      hash,
+      name: file.name,
+      size: file.size,
+      created,
+      file
+    });
+    transaction.oncomplete = () => resolve();
+    transaction.onerror = () => reject(transaction.error || new Error('Unable to save the uploaded file.'));
+    transaction.onabort = () => reject(transaction.error || new Error('Saving the uploaded file was interrupted.'));
+  });
+}
+
+async function loadUploadedFiles() {
+  const database = await openUploadsDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction('uploadedFiles', 'readonly');
+    const request = transaction.objectStore('uploadedFiles').getAll();
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error || new Error('Unable to read saved library files.'));
+  });
+}
+
+async function restoreUploadedFiles() {
+  const storedFiles = await loadUploadedFiles();
+  uploadedReferences.splice(0, uploadedReferences.length);
+
+  for (const stored of storedFiles.sort((a, b) => a.addedAt - b.addedAt)) {
+    if (documents.some((doc) => doc.id === stored.id)) continue;
+    const { file, ...metadata } = stored;
+    const enrichment = await buildUploadMetadata(file);
+    const themes = stored.themes?.length ? stored.themes : enrichment.themes;
+    const record = {
+      ...metadata,
+      ...enrichment,
+      themes,
+      category: themes[0] || enrichment.category,
+      id: stored.id,
+      name: stored.name,
+      size: stored.size,
+      hash: stored.hash,
+      created: stored.created,
+      addedAt: stored.addedAt,
+      type: 'Uploaded Document',
+      path: URL.createObjectURL(file)
+    };
+    documents.unshift(record);
+    uploadedReferences.push({
+      id: record.id,
+      hash: record.hash,
+      name: record.name,
+      size: record.size,
+      created: record.created
+    });
+    await saveUploadedFile(record, file, record.hash, record.created);
+  }
+
+  try {
+    localStorage.setItem('knowledge-library-uploads', JSON.stringify(uploadedReferences));
+  } catch (error) {
+    console.error('Unable to save uploaded file references in browser storage.', error);
+  }
 }
 
 function renderSuggestedTags() {
@@ -272,8 +288,50 @@ function renderSuggestedTags() {
   suggestedTags.querySelectorAll('.tag').forEach((tag) => {
     tag.addEventListener('click', () => {
       searchInput.value = tag.textContent.trim();
+      activeTheme = '';
+      updateThemeSelection();
+      activateTool('docs');
       runSearch();
     });
+  });
+}
+
+function renderThemeList() {
+  const query = normalize(themeSearchInput.value.trim());
+  const categoryCounts = new Map();
+  documents.forEach((doc) => {
+    const categories = doc.themes?.length ? doc.themes : [doc.category];
+    [...new Set(categories)].forEach((category) => categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1));
+  });
+  const categories = [...categoryCounts.entries()]
+    .filter(([category]) => normalize(category).includes(query) || category === activeTheme)
+    .sort(([a], [b]) => a.localeCompare(b));
+
+  themeList.innerHTML = `
+    <button class="theme-card ${activeTheme ? '' : 'is-selected'}" type="button" data-theme="" aria-pressed="${String(!activeTheme)}">
+      <strong>All themes</strong><span>${documents.length} documents</span>
+    </button>
+    ${categories.length ? categories.map(([category, count]) => `
+      <button class="theme-card ${activeTheme === category ? 'is-selected' : ''}" type="button" data-theme="${escapeHtml(category)}" aria-pressed="${String(activeTheme === category)}">
+        <strong>${escapeHtml(category)}</strong><span>${count} document${count === 1 ? '' : 's'}</span>
+      </button>
+    `).join('') : '<p class="theme-empty">No themes match your search.</p>'}
+  `;
+
+  themeList.querySelectorAll('[data-theme]').forEach((button) => {
+    button.addEventListener('click', () => {
+      activeTheme = button.dataset.theme;
+      updateThemeSelection();
+      runSearch();
+    });
+  });
+}
+
+function updateThemeSelection() {
+  themeList.querySelectorAll('[data-theme]').forEach((button) => {
+    const selected = button.dataset.theme === activeTheme;
+    button.classList.toggle('is-selected', selected);
+    button.setAttribute('aria-pressed', String(selected));
   });
 }
 
@@ -298,6 +356,72 @@ function categorizeUpload(fileName) {
   return 'General Business Transformation';
 }
 
+const uploadTopicRules = [
+  { category: 'Proposal & Response Solution', terms: ['rfp', 'rfi', 'rfs', 'proposal', 'tender', 'bid response', 'commercial response'] },
+  { category: 'AI & Data Solutions', terms: ['artificial intelligence', 'generative ai', 'genai', 'machine learning', 'large language model', 'llm', 'copilot', 'automation'] },
+  { category: 'Data, Analytics & Monetization', terms: ['data monetization', 'monetization', 'analytics', 'data product', 'data products', 'customer insights', 'business intelligence'] },
+  { category: 'Sales & Customer Transformation', terms: ['sales transformation', 'sales', 'crm', 'cpq', 'customer experience', 'customer journey', 'commercial productivity'] },
+  { category: 'Telecom & Network Transformation', terms: ['telecom', 'telecommunications', 'telco', 'network', '5g', 'mobile access', 'oss', 'bss', 'mnp', 'radio access'] },
+  { category: 'Architecture & Technology', terms: ['architecture', 'technology', 'engineering', 'cloud', 'platform', 'integration', 'technical'] },
+  { category: 'Operating Model & Process Transformation', terms: ['operating model', 'operating models', 'process transformation', 'process simplification', 'mutualization', 'shared services', 'governance', 'operational excellence'] },
+  { category: 'Market Strategy & Growth', terms: ['market analysis', 'market strategy', 'market entry', 'growth strategy', 'go to market', 'g2m'] },
+  { category: 'Product Strategy & Growth', terms: ['product strategy', 'product management', 'product development', 'product growth'] },
+  { category: 'Data Strategy', terms: ['data strategy', 'data landscape', 'data governance', 'data architecture'] },
+  { category: 'Sustainability', terms: ['sustainability', 'esg', 'environmental', 'carbon', 'climate'] },
+  { category: 'Executive Briefing', terms: ['executive briefing', 'executive workshop', 'leadership', 'board', 'strategic workshop'] }
+];
+
+const uploadKeywordStopWords = new Set([
+  'about', 'after', 'also', 'approach', 'based', 'business', 'capgemini', 'customer', 'document',
+  'draft', 'final', 'from', 'into', 'overview', 'project', 'support', 'the', 'their', 'this',
+  'through', 'using', 'version', 'with'
+]);
+
+function normalizedWords(value) {
+  return ` ${normalize(value).replace(/[^a-z0-9]+/g, ' ').trim()} `;
+}
+
+function containsUploadTerm(text, term) {
+  return text.includes(normalizedWords(term));
+}
+
+async function buildUploadMetadata(file) {
+  const fileTitle = file.name.replace(/\.[^/.]+$/, '');
+  let documentText = '';
+  if (file.name.toLowerCase().endsWith('.txt')) {
+    documentText = (await file.slice(0, 300000).text()).replace(/\0/g, ' ');
+  }
+
+  const indexedText = [fileTitle, documentText].filter(Boolean).join('\n').slice(0, 300000);
+  const normalizedSource = normalizedWords(indexedText);
+  const matchedTerms = [];
+  const rankedThemes = uploadTopicRules.map((rule) => {
+    const hits = rule.terms.filter((term) => containsUploadTerm(normalizedSource, term));
+    matchedTerms.push(...hits);
+    return { category: rule.category, score: hits.length };
+  }).filter((theme) => theme.score > 0).sort((a, b) => b.score - a.score);
+
+  const categories = rankedThemes.length
+    ? rankedThemes.filter((theme) => theme.score >= Math.max(1, rankedThemes[0].score * 0.4)).slice(0, 4).map((theme) => theme.category)
+    : [categorizeUpload(fileTitle)];
+  const category = categories[0];
+  const termCounts = new Map();
+  normalizedSource.match(/[a-z0-9]+/g)?.forEach((word) => {
+    if (word.length < 3 || /^\d+$/.test(word) || uploadKeywordStopWords.has(word)) return;
+    termCounts.set(word, (termCounts.get(word) || 0) + 1);
+  });
+  const frequentTerms = [...termCounts.entries()].sort((a, b) => b[1] - a[1]).map(([word]) => word);
+  const keywordCandidates = [...matchedTerms, ...frequentTerms];
+  const keywords = [...new Set(keywordCandidates.map((term) => term.trim()).filter(Boolean))].slice(0, 14);
+
+  return {
+    category,
+    themes: categories,
+    keywords: keywords.length ? keywords : [fileTitle],
+    indexText: documentText
+  };
+}
+
 async function hashFile(file) {
   try {
     const buffer = await file.arrayBuffer();
@@ -309,26 +433,72 @@ async function hashFile(file) {
 }
 
 function isDuplicateUpload(file, hash) {
-  const normalizedName = normalize(file.name);
-  const knownNames = documents.map((doc) => normalize(doc.title + ' ' + doc.path));
-  return uploadedReferences.some((item) => item.hash === hash || normalize(item.name) === normalizedName) || knownNames.some((name) => name.includes(normalizedName) || normalizedName.includes(name));
+  const normalizedName = normalize(file.name).trim();
+  const normalizedTitle = normalize(file.name.replace(/\.[^/.]+$/, '')).trim();
+  const matchesLibraryName = documents.some((doc) => {
+    const sourceName = normalize(doc.path.split(/[\\/]/).pop() || '').replace(/\.[^/.]+$/, '').trim();
+    return normalize(doc.title).trim() === normalizedTitle || sourceName === normalizedTitle;
+  });
+  return uploadedReferences.some((item) => item.hash === hash || normalize(item.name).trim() === normalizedName) || matchesLibraryName;
 }
 
 function addUploadedTypeFilter() {
-  if ([...typeFilter.options].some((option) => option.value === 'Uploaded Document')) return;
-  const option = document.createElement('option');
-  option.value = 'Uploaded Document';
-  option.textContent = 'Uploaded Document';
-  typeFilter.appendChild(option);
+  if (![...typeFilter.options].some((option) => option.value === 'Uploaded Document')) {
+    const option = document.createElement('option');
+    option.value = 'Uploaded Document';
+    option.textContent = 'Uploaded Document';
+    typeFilter.appendChild(option);
+  }
+  renderThemeList();
 }
 
 function searchableText(doc) {
-  return [doc.title, doc.type, doc.category, doc.summary, doc.overview, doc.keywords.join(' '), doc.poc, doc.contact].join(' ').toLowerCase();
+  return [doc.title, doc.type, doc.category, doc.themes?.join(' '), doc.summary, doc.overview, doc.keywords.join(' '), doc.indexText, doc.poc, doc.contact].join(' ').toLowerCase();
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[character]);
+}
+
+function rankDocuments(query) {
+  const stopWords = new Set(['about', 'and', 'are', 'can', 'could', 'for', 'from', 'help', 'how', 'i', 'in', 'is', 'it', 'me', 'of', 'on', 'or', 'our', 'please', 'the', 'this', 'to', 'we', 'what', 'with', 'you']);
+  const normalizedQuery = normalize(query).trim();
+  const terms = [...new Set(normalizedQuery.match(/[a-z0-9]+/g) || [])].filter((term) => term.length > 1 && !stopWords.has(term));
+  if (!terms.length) return [];
+
+  return documents.map((doc) => {
+    const title = normalize(doc.title);
+    const category = normalize(doc.category);
+    const keywords = normalize(doc.keywords.join(' '));
+    const content = normalize(doc.indexText);
+    const details = normalize([doc.type, doc.summary, doc.overview, doc.poc, doc.contact].join(' '));
+    let score = 0;
+    let matchedTerms = 0;
+
+    terms.forEach((term) => {
+      const strongMatch = title.includes(term) || keywords.includes(term) || category.includes(term);
+      if (title.includes(term)) score += 8;
+      if (keywords.includes(term)) score += 5;
+      if (category.includes(term)) score += 3;
+      if (content.includes(term)) score += 2;
+      if (details.includes(term)) score += 1;
+      if (strongMatch) matchedTerms += 1;
+    });
+
+    if (normalizedQuery.length > 3 && searchableText(doc).includes(normalizedQuery)) score += 6;
+    return { doc, score, matchedTerms, totalTerms: terms.length };
+  }).filter((result) => result.score > 0).sort((a, b) => b.score - a.score);
 }
 
 function findDocuments(query, types = []) {
-  const normalizedQuery = normalize(query);
-  return documents.filter((doc) => (!normalizedQuery || searchableText(doc).includes(normalizedQuery)) && (!types.length || types.includes(doc.fileType)));
+  if (!normalize(query).trim()) return documents.filter((doc) => !types.length || types.includes(doc.fileType));
+  return rankDocuments(query).map(({ doc }) => doc).filter((doc) => !types.length || types.includes(doc.fileType));
 }
 
 function getMatchedKeyword(doc, query) {
@@ -342,11 +512,171 @@ function getSlideReference(doc, query) {
   return String(keywordIndex + 1).padStart(2, '0');
 }
 
-function renderToolResults(container, items, emptyMessage) {
-  container.innerHTML = items.length ? items.slice(0, 8).map((doc) => `
-    <article class="tool-result"><div><strong>${doc.title}</strong><span>${doc.type} · ${doc.category}</span></div><button class="text-btn" type="button" data-tool-doc="${doc.id}">Open</button></article>
-  `).join('') : `<div class="tool-empty">${emptyMessage}</div>`;
-  container.querySelectorAll('[data-tool-doc]').forEach((button) => button.addEventListener('click', () => openDocument(documents.find((doc) => doc.id === button.dataset.toolDoc))));
+function renderAssistantResponse(question, mode) {
+  if (assistantSource === 'external') {
+    assistantResponse.innerHTML = `
+      <div class="assistant-message">
+        <p class="section-label">External search is not connected</p>
+        <h3>No public web results are available in this demo.</h3>
+        <p>Connect an approved search provider to enable industry research and public reports. Internal catalog results remain separate from external information.</p>
+      </div>
+    `;
+    assistantResponse.hidden = false;
+    lastAssistantExport = null;
+    return;
+  }
+
+  const ranked = rankDocuments(question).filter(({ score }) => score >= 2).slice(0, 6);
+  if (!ranked.length) {
+    assistantResponse.innerHTML = `
+      <div class="assistant-message">
+        <p class="section-label">Internal catalog</p>
+        <h3>No matching catalog descriptions found.</h3>
+        <p>Try a topic or phrase such as AI, architecture, Orange, RFP, sales transformation, or data monetization. This prototype does not search document contents.</p>
+      </div>
+    `;
+    assistantResponse.hidden = false;
+    lastAssistantExport = null;
+    return;
+  }
+
+  const sources = ranked.slice(0, 3);
+  const primary = sources[0].doc;
+  const matchPercent = (matchedTerms, totalTerms) => Math.round((matchedTerms / totalTerms) * 100);
+  const citationMarkup = sources.map(({ doc, matchedTerms, totalTerms }, index) => `
+    <article class="assistant-source" id="assistant-source-${index + 1}">
+      <div class="source-title">
+        <span class="citation-number">[${index + 1}]</span>
+        <a href="${escapeHtml(sourceUrl(doc))}" target="_blank" rel="noopener noreferrer">${escapeHtml(doc.title)}</a>
+        <button type="button" class="text-btn" data-assistant-details="${escapeHtml(doc.id)}">Preview</button>
+      </div>
+      <p>${escapeHtml(doc.summary)}</p>
+      <span class="match-indicator">Metadata term coverage · ${matchPercent(matchedTerms, totalTerms)}% <small>(heuristic, not model confidence)</small></span>
+    </article>
+  `).join('');
+
+  const summaries = sources.map(({ doc }, index) => `
+    <li>${escapeHtml(doc.summary)} <a href="#assistant-source-${index + 1}" aria-label="View citation ${index + 1}">[${index + 1}]</a></li>
+  `).join('');
+  const modeContent = {
+    answer: `
+      <p>Based on ${sources.length} matching catalog description${sources.length === 1 ? '' : 's'}, the strongest starting point is <strong>${escapeHtml(primary.title)}</strong>. These records suggest the following reusable evidence; open each original source to validate its details.</p>
+      <ul class="assistant-evidence">${summaries}</ul>
+    `,
+    challenge: `
+      <p>Use <strong>${escapeHtml(primary.title)}</strong> as a starting point, not proof that the approach will transfer unchanged.</p>
+      <ul class="assistant-evidence">
+        <li>Which customer-specific assumptions are supported by the source, and which still need validation?</li>
+        <li>What counter-evidence, delivery constraints, or risk controls could change the recommendation?</li>
+        <li>Are the cited examples comparable in market, operating model, and intended outcome?</li>
+      </ul>
+    `,
+    meeting: `
+      <p>Use these catalog records to prepare a source-led discussion. Confirm evidence and applicability in the original files before the meeting.</p>
+      <ul class="assistant-evidence">
+        <li><strong>Talking point:</strong> Start with the problem framing in ${escapeHtml(primary.title)}.</li>
+        <li><strong>Likely question:</strong> Which outcomes, assumptions, and dependencies are evidenced versus proposed?</li>
+        <li><strong>Discussion risk:</strong> The catalog contains summaries, not extracted slide-level or document-level evidence.</li>
+        <li><strong>Follow-up:</strong> Validate the relevant source with its listed owner or account team.</li>
+      </ul>
+    `,
+    learn: `
+      <p>Start with <strong>${escapeHtml(primary.title)}</strong>, then work through the evidence in stages:</p>
+      <ol class="assistant-evidence">
+        <li><strong>Orientation:</strong> Read the source summary and identify its problem context.</li>
+        <li><strong>Explore:</strong> Compare the other cited records for shared themes and differences.</li>
+        <li><strong>Apply:</strong> Open the source files and test which concepts fit your own situation.</li>
+      </ol>
+    `
+  }[mode];
+
+  const relatedAssets = ranked.slice(3).filter(({ doc }) => doc.category === primary.category || doc.keywords.some((keyword) => primary.keywords.includes(keyword))).slice(0, 2);
+  const relatedMarkup = relatedAssets.length ? `
+    <section class="assistant-subsection">
+      <h4>Related assets</h4>
+      ${relatedAssets.map(({ doc }) => `<a class="related-asset" href="${escapeHtml(sourceUrl(doc))}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(doc.title)}</strong><span>${escapeHtml(doc.type)} · ${escapeHtml(doc.category)}</span></a>`).join('')}
+    </section>
+  ` : '';
+  const expertMarkup = [...new Map(sources.map(({ doc }) => [doc.poc, doc])).values()].map((doc) => `
+    <article class="expert-card">
+      <strong>${escapeHtml(doc.poc)}</strong>
+      <span>Related catalog item: ${escapeHtml(doc.title)}</span>
+      <span>Contact: ${escapeHtml(doc.contact)}</span>
+      <span>Location: not listed in library metadata</span>
+    </article>
+  `).join('');
+
+  const responseBody = `
+    <p class="section-label">Internal catalog · metadata-based response</p>
+    <h3>${escapeHtml({
+      answer: 'Research starting point',
+      challenge: 'Assumptions to test',
+      meeting: 'Meeting preparation',
+      learn: 'A learning path'
+    }[mode])}</h3>
+    ${modeContent}
+    <p class="assistant-question"><strong>Your question:</strong> ${escapeHtml(question)}</p>
+    <section class="assistant-subsection">
+      <h4>Sources and previews</h4>
+      ${citationMarkup}
+    </section>
+    <section class="assistant-subsection">
+      <h4>Relevant expert roles</h4>
+      <p class="metadata-note">Role and channel are taken from catalog metadata; named people and locations are not indexed.</p>
+      <div class="expert-grid">${expertMarkup}</div>
+    </section>
+    ${relatedMarkup}
+    <p class="analogue-note">Cross-industry analogues need a broader, curated dataset; this TMT catalog does not infer them.</p>
+    <div class="assistant-actions">
+      <span>Was this useful?</span>
+      <button type="button" class="feedback-btn" data-feedback="helpful">Helpful</button>
+      <button type="button" class="feedback-btn" data-feedback="not-helpful">Not helpful</button>
+      <button type="button" class="feedback-btn export-btn" id="assistantExport">Export Word brief</button>
+    </div>
+    <p class="response-disclaimer">Prototype only: matches and summaries are generated from catalog metadata, not document contents. No access-control check is performed. Validate source access and content before reuse.</p>
+  `;
+
+  assistantResponse.innerHTML = `<div class="assistant-message">${responseBody}</div>`;
+  assistantResponse.hidden = false;
+  lastAssistantExport = {
+    title: `TMT Library brief - ${primary.title}`,
+    html: `<h1>${escapeHtml(primary.title)}</h1><p>${escapeHtml(question)}</p>${modeContent}<h2>Sources</h2>${citationMarkup}<p>Prototype metadata response. Validate sources and permissions before reuse.</p>`
+  };
+
+  assistantResponse.querySelectorAll('[data-assistant-details]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const doc = documents.find((item) => item.id === button.dataset.assistantDetails);
+      if (doc) openDetails(doc);
+    });
+  });
+  assistantResponse.querySelectorAll('[data-feedback]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const feedback = JSON.parse(localStorage.getItem('knowledge-library-feedback') || '{"helpful":0,"not-helpful":0}');
+      feedback[button.dataset.feedback] = (feedback[button.dataset.feedback] || 0) + 1;
+      localStorage.setItem('knowledge-library-feedback', JSON.stringify(feedback));
+      button.parentElement.querySelectorAll('[data-feedback]').forEach((choice) => {
+        choice.disabled = true;
+        choice.classList.toggle('is-selected', choice === button);
+      });
+      showToast('Feedback saved in this browser');
+    });
+  });
+  const exportButton = document.getElementById('assistantExport');
+  exportButton.addEventListener('click', exportAssistantBrief);
+}
+
+function exportAssistantBrief() {
+  if (!lastAssistantExport) return;
+  const html = `<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(lastAssistantExport.title)}</title></head><body>${lastAssistantExport.html}</body></html>`;
+  const url = URL.createObjectURL(new Blob([html], { type: 'application/msword' }));
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `${lastAssistantExport.title.replace(/[\\/:*?"<>|]/g, '-')}.doc`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  showToast('Word-compatible brief export started');
 }
 
 function searchSlides() {
@@ -384,10 +714,6 @@ function searchSlides() {
   });
 }
 
-function searchDocs() {
-  renderToolResults(docFinderResults, findDocuments(docFinderInput.value), 'No document matches yet. Try a customer, proposal, or capability keyword.');
-}
-
 function activateTool(tool) {
   toolTabs.forEach((tab) => {
     const active = tab.dataset.tool === tool;
@@ -414,25 +740,15 @@ function documentUrl(path) {
   return path.split('/').map((part) => encodeURIComponent(part)).join('/');
 }
 
+function sourceUrl(doc) {
+  return /^(https?:|blob:)/i.test(doc.path) ? doc.path : documentUrl(doc.path);
+}
+
 function runSearch() {
-  const query = normalize(searchInput.value.trim());
-  let filtered = !query
-    ? documents
-    : documents.filter((doc) => {
-        const haystack = [
-          doc.title,
-          doc.type,
-          doc.category,
-          doc.summary,
-          doc.overview,
-          doc.keywords.join(' '),
-          doc.poc,
-          doc.contact
-        ].join(' ').toLowerCase();
+  const query = searchInput.value.trim();
+  let filtered = query ? rankDocuments(query).map(({ doc }) => doc) : [...documents];
 
-        return haystack.includes(query);
-      });
-
+  if (activeTheme) filtered = filtered.filter((doc) => (doc.themes?.length ? doc.themes : [doc.category]).includes(activeTheme));
   if (typeFilter.value !== 'all') filtered = filtered.filter((doc) => doc.type === typeFilter.value);
   if (showingFavorites) filtered = filtered.filter((doc) => favoriteIds.has(doc.id));
   if (sortSelect.value === 'title') filtered.sort((a, b) => a.title.localeCompare(b.title));
@@ -453,7 +769,18 @@ function openDetails(doc) {
   modalTitle.textContent = doc.title;
   modalType.textContent = `${doc.type} / ${doc.category}`;
   modalSummary.textContent = `${doc.summary} ${doc.overview}`;
-  modalMeta.innerHTML = `<strong>Point of contact</strong><span>${doc.poc}<br>${doc.contact}</span><strong>Keywords</strong><span>${doc.keywords.join(' · ')}</span>`;
+  modalMeta.replaceChildren();
+  [
+    ['Point of contact', `${doc.poc} · ${doc.contact}`],
+    ['Themes', (doc.themes?.length ? doc.themes : [doc.category]).join(' · ')],
+    ['Keywords', doc.keywords.join(' · ')]
+  ].forEach(([label, value]) => {
+    const heading = document.createElement('strong');
+    heading.textContent = label;
+    const detail = document.createElement('span');
+    detail.textContent = value;
+    modalMeta.append(heading, detail);
+  });
   detailModal.hidden = false;
   document.body.classList.add('modal-open');
 }
@@ -473,8 +800,7 @@ function toggleFavorite(docId) {
 }
 
 function openDocument(doc) {
-  const url = doc.path.startsWith('http') ? doc.path : documentUrl(doc.path);
-  window.open(url, '_blank', 'noopener,noreferrer');
+  window.open(sourceUrl(doc), '_blank', 'noopener,noreferrer');
 }
 
 function downloadPdfBrief(doc) {
@@ -541,31 +867,31 @@ function renderResults(items) {
   resultsContainer.innerHTML = items.map((doc) => `
     <article class="result-card">
       <div class="result-top">
-        <h4>${doc.title}</h4>
-        <div class="result-actions"><span class="badge">${doc.type}</span><button class="favorite-btn ${favoriteIds.has(doc.id) ? 'is-favorite' : ''}" type="button" data-action="favorite" data-id="${doc.id}" aria-label="Save ${doc.title}">${favoriteIds.has(doc.id) ? '★' : '☆'}</button></div>
+        <h4>${escapeHtml(doc.title)}</h4>
+        <div class="result-actions"><span class="badge">${escapeHtml(doc.type)}</span><button class="favorite-btn ${favoriteIds.has(doc.id) ? 'is-favorite' : ''}" type="button" data-action="favorite" data-id="${escapeHtml(doc.id)}" aria-label="Save ${escapeHtml(doc.title)}">${favoriteIds.has(doc.id) ? '★' : '☆'}</button></div>
       </div>
 
-      <p>${doc.summary}</p>
+      <p>${escapeHtml(doc.summary)}</p>
 
       <div class="meta-row">
         <div class="meta-block">
-          <span class="meta-label">Solution focus</span>
-          <div class="meta-value">${doc.category}</div>
+          <span class="meta-label">Themes</span>
+          <div class="meta-value">${escapeHtml((doc.themes?.length ? doc.themes : [doc.category]).join(' · '))}</div>
         </div>
         <div class="meta-block">
           <span class="meta-label">Point of contact</span>
-          <div class="meta-value">${doc.poc}<br>${doc.contact}</div>
+          <div class="meta-value">${escapeHtml(doc.poc)}<br>${escapeHtml(doc.contact)}</div>
         </div>
       </div>
 
       <ul class="keywords">
-        ${doc.keywords.map((keyword) => `<li>${keyword}</li>`).join('')}
+        ${doc.keywords.map((keyword) => `<li>${escapeHtml(keyword)}</li>`).join('')}
       </ul>
 
       <div class="actions-row">
-        <button class="secondary-btn" type="button" data-action="details" data-id="${doc.id}">View details</button>
-        <button class="secondary-btn" type="button" data-action="open" data-id="${doc.id}">Open source</button>
-        <button class="link-btn" type="button" data-action="pdf" data-id="${doc.id}">Download PDF</button>
+        <button class="secondary-btn" type="button" data-action="details" data-id="${escapeHtml(doc.id)}">View details</button>
+        <button class="secondary-btn" type="button" data-action="open" data-id="${escapeHtml(doc.id)}">Open source</button>
+        <button class="link-btn" type="button" data-action="pdf" data-id="${escapeHtml(doc.id)}">Download PDF</button>
       </div>
     </article>
   `).join('');
@@ -596,15 +922,30 @@ function renderResults(items) {
 }
 
 toolTabs.forEach((tab) => tab.addEventListener('click', () => activateTool(tab.dataset.tool)));
+document.querySelector('[data-open-tool="themes"]').addEventListener('click', (event) => {
+  event.preventDefault();
+  activateTool('themes');
+  document.getElementById('knowledge-tools').scrollIntoView({ behavior: 'smooth' });
+});
+assistantSourceOptions.forEach((option) => option.addEventListener('click', () => {
+  assistantSource = option.dataset.source;
+  assistantSourceOptions.forEach((item) => {
+    const active = item === option;
+    item.classList.toggle('is-active', active);
+    item.setAttribute('aria-pressed', String(active));
+  });
+}));
+assistantForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  renderAssistantResponse(assistantQuestion.value.trim(), assistantMode.value);
+});
+assistantSuggestions.forEach((suggestion) => suggestion.addEventListener('click', () => {
+  assistantQuestion.value = suggestion.textContent.trim();
+  assistantQuestion.focus();
+  renderAssistantResponse(assistantQuestion.value, assistantMode.value);
+}));
 slideSearchBtn.addEventListener('click', searchSlides);
 slideSearchInput.addEventListener('keydown', (event) => { if (event.key === 'Enter') searchSlides(); });
-docFinderBtn.addEventListener('click', searchDocs);
-docFinderInput.addEventListener('keydown', (event) => { if (event.key === 'Enter') searchDocs(); });
-uploadBrowseBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  if (typeof uploadInput.showPicker === 'function') uploadInput.showPicker();
-  else uploadInput.click();
-});
 uploadInput.addEventListener('change', async () => {
   const files = [...uploadInput.files];
   if (!files.length) return;
@@ -612,64 +953,125 @@ uploadInput.addEventListener('change', async () => {
   uploadStatus.textContent = 'Checking files and categorizing solution focus...';
   let added = 0;
   const errors = [];
+  const supportedExtensions = new Set(['pdf', 'pptx', 'ppt', 'docx', 'xlsx', 'txt']);
 
   for (const file of files) {
-    const hash = await hashFile(file);
-    if (isDuplicateUpload(file, hash)) {
-      errors.push(`${file.name}: already in the library`);
+    const extension = file.name.split('.').pop().toLowerCase();
+    if (!supportedExtensions.has(extension)) {
+      errors.push(`${file.name}: unsupported file type`);
       continue;
     }
 
-    const objectUrl = URL.createObjectURL(file);
-    const category = categorizeUpload(file.name);
+    const hash = await hashFile(file);
+    if (isDuplicateUpload(file, hash)) {
+      errors.push(`Document "${file.name}" is already uploaded in the library.`);
+      continue;
+    }
+
+    let enrichment;
+    try {
+      enrichment = await buildUploadMetadata(file);
+    } catch (error) {
+      console.error(`Unable to index ${file.name}.`, error);
+      errors.push(`${file.name}: unable to extract upload metadata (${error.message})`);
+      continue;
+    }
+    const created = new Date().toLocaleDateString();
+    const title = file.name.replace(/\.[^/.]+$/, '');
+    const id = `upload-${hash}`;
     const record = {
-      id: `upload-${hash.slice(0, 12)}`,
-      title: file.name.replace(/\.[^/.]+$/, ''),
+      id,
+      title,
+      addedAt: Date.now(),
       type: 'Uploaded Document',
-      category,
-      path: objectUrl,
-      fileType: file.name.split('.').pop().toLowerCase(),
-      summary: `User-uploaded reference categorized under ${category}. The file is available for this browser session and searchable across its filename and solution focus.`,
-      overview: `Uploaded document with automatically assigned solution focus: ${category}.`,
-      keywords: [category, file.name.replace(/\.[^/.]+$/, '')],
+      ...enrichment,
+      path: '',
+      fileType: extension,
+      summary: `Uploaded reference indexed from its filename${enrichment.indexText ? ' and readable text' : ''}. Themes: ${enrichment.themes.join(', ')}. Keywords: ${enrichment.keywords.join(', ')}.`,
+      overview: 'Automatically generated library metadata; review the original document to validate its content and relevance.',
       poc: 'User-uploaded library reference',
       contact: 'Review the source document for contact details'
     };
 
-    documents.push(record);
-    uploadedDocuments.push(record);
-    uploadedReferences.unshift({ name: file.name, size: file.size, hash, created: new Date().toLocaleDateString(), id: record.id });
+    try {
+      await saveUploadedFile(record, file, hash, created);
+      record.path = URL.createObjectURL(file);
+      documents.unshift(record);
+      uploadedReferences.unshift({ name: file.name, size: file.size, hash, created, id: record.id });
+    } catch (error) {
+      console.error(`Unable to add ${file.name} to the local library.`, error);
+      errors.push(`${file.name}: could not be saved to the browser library (${error.message})`);
+      continue;
+    }
     added += 1;
   }
 
-  localStorage.setItem('knowledge-library-uploads', JSON.stringify(uploadedReferences));
+  try {
+    localStorage.setItem('knowledge-library-uploads', JSON.stringify(uploadedReferences));
+  } catch (error) {
+    console.error('Unable to save uploaded document references in this browser.', error);
+    errors.push('Files are available this session, but their references could not be saved in browser storage.');
+  }
   if (added) {
     addUploadedTypeFilter();
     totalDocs.textContent = documents.length;
+    totalCategories.textContent = new Set(documents.map((doc) => doc.category)).size;
+    searchInput.value = '';
+    typeFilter.value = 'all';
+    activeTheme = '';
+    showingFavorites = false;
+    updateThemeSelection();
+    updateFavoritesCount();
+    renderThemeList();
     renderUploads();
     runSearch();
   }
   uploadStatus.className = errors.length ? 'upload-status has-error' : 'upload-status has-success';
-  uploadStatus.innerHTML = `${added ? `<strong>${added} file${added === 1 ? '' : 's'} added to the library.</strong>` : ''}${errors.length ? `<span>${errors.join('<br>')}</span>` : ''}`;
-  showToast(errors.length ? 'Upload completed with duplicate warnings' : `${added} document${added === 1 ? '' : 's'} added to the library`);
+  const messages = [];
+  if (added) messages.push(`${added} file${added === 1 ? '' : 's'} added to the library and saved in this browser.`);
+  if (errors.length) messages.push(errors.join(' '));
+  uploadStatus.textContent = messages.join(' ');
+  showToast(errors.length ? 'Upload completed with warnings' : `${added} document${added === 1 ? '' : 's'} added to the library`);
   uploadInput.value = '';
 });
 
 function renderUploads() {
-  uploadList.innerHTML = uploadedReferences.length ? uploadedReferences.slice(0, 12).map((file) => `<article class="project-item"><strong>${file.name}</strong><span>${Math.ceil(file.size / 1024)} KB · added ${file.created}</span></article>`).join('') : '<div class="tool-empty">Uploaded file references will appear here for this browser session.</div>';
+  uploadList.replaceChildren();
+  if (!uploadedReferences.length) {
+    uploadList.textContent = 'Uploaded file references will appear here for this browser session.';
+    uploadList.classList.add('tool-empty');
+    return;
+  }
+
+  uploadList.classList.remove('tool-empty');
+  uploadedReferences.slice(0, 12).forEach((file) => {
+    const item = document.createElement('article');
+    item.className = 'project-item';
+    const name = document.createElement('strong');
+    name.textContent = file.name;
+    const metadata = document.createElement('span');
+    metadata.textContent = `${Math.ceil(file.size / 1024)} KB · added ${file.created}`;
+    item.append(name, metadata);
+    uploadList.append(item);
+  });
 }
 
-searchBtn.addEventListener('click', runSearch);
-searchInput.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') runSearch();
+docSearchForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  activeTheme = '';
+  updateThemeSelection();
+  runSearch();
 });
 clearBtn.addEventListener('click', () => {
   searchInput.value = '';
+  activeTheme = '';
+  updateThemeSelection();
   runSearch();
   searchInput.focus();
 });
 typeFilter.addEventListener('change', runSearch);
 sortSelect.addEventListener('change', runSearch);
+themeSearchInput.addEventListener('input', renderThemeList);
 favoritesBtn.addEventListener('click', () => {
   showingFavorites = !showingFavorites;
   updateFavoritesCount();
@@ -679,7 +1081,10 @@ resetViewBtn.addEventListener('click', () => {
   searchInput.value = '';
   typeFilter.value = 'all';
   sortSelect.value = 'relevance';
+  themeSearchInput.value = '';
+  activeTheme = '';
   showingFavorites = false;
+  renderThemeList();
   updateFavoritesCount();
   runSearch();
 });
@@ -703,13 +1108,30 @@ modalShare.addEventListener('click', async () => {
   }
 });
 
-renderAreaList();
-renderTypeFilter();
-renderSuggestedTags();
-updateFavoritesCount();
-searchSlides();
-searchDocs();
-renderUploads();
-totalDocs.textContent = documents.length;
-totalCategories.textContent = libraryAreas.length;
-runSearch();
+async function initializeLibrary() {
+  renderTypeFilter();
+  renderSuggestedTags();
+  renderThemeList();
+  updateFavoritesCount();
+  searchSlides();
+  renderUploads();
+  totalDocs.textContent = documents.length;
+  totalCategories.textContent = new Set(documents.map((doc) => doc.category)).size;
+  runSearch();
+
+  try {
+    await restoreUploadedFiles();
+    if (uploadedReferences.length) addUploadedTypeFilter();
+    renderThemeList();
+    renderUploads();
+    totalDocs.textContent = documents.length;
+    totalCategories.textContent = new Set(documents.map((doc) => doc.category)).size;
+    runSearch();
+  } catch (error) {
+    console.error('Unable to restore saved files to the library.', error);
+    uploadStatus.className = 'upload-status has-error';
+    uploadStatus.textContent = `Saved uploads could not be loaded from this browser: ${error.message}`;
+  }
+}
+
+initializeLibrary();

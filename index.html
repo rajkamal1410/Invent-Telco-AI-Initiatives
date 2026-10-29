@@ -14,8 +14,9 @@
         <span>INVENT INDIA<br><em>TMT LIBRARY</em></span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#library">Library</a>
-        <a href="#areas">Themes</a>
+        <a href="#assistant">Assistant</a>
+        <a href="#knowledge-tools">Library</a>
+        <a href="#knowledge-tools" data-open-tool="themes">Themes</a>
       </nav>
       <div class="topbar-badge">Invent India TMT Library <span aria-hidden="true">↗</span></div>
     </header>
@@ -33,74 +34,120 @@
         </div>
       </section>
 
+      <section class="assistant-section" id="assistant">
+        <div class="assistant-heading">
+          <div>
+            <p class="section-label">Knowledge intelligence · prototype</p>
+            <h2>Ask the TMT library.</h2>
+            <p>Explore catalogued knowledge, see the evidence behind a response, and find the roles connected to each source.</p>
+          </div>
+          <span class="prototype-badge">Local catalog demo</span>
+        </div>
+
+        <div class="assistant-boundary" role="note">
+          This browser-only prototype searches document descriptions and metadata. It does not connect to an LLM, SharePoint, Teams, web search, identity, or enterprise permissions; review source files and access rights before use.
+        </div>
+
+        <form class="assistant-form" id="assistantForm">
+          <div class="assistant-controls">
+            <div class="source-toggle" role="group" aria-label="Knowledge source">
+              <button type="button" class="source-option is-active" data-source="internal" aria-pressed="true">Internal catalog</button>
+              <button type="button" class="source-option" data-source="external" aria-pressed="false">External web</button>
+            </div>
+            <label class="assistant-mode-label" for="assistantMode">Working mode
+              <select id="assistantMode">
+                <option value="answer">Research answer</option>
+                <option value="challenge">Challenge assumptions</option>
+                <option value="meeting">Prepare for a meeting</option>
+                <option value="learn">Learn a topic</option>
+              </select>
+            </label>
+          </div>
+          <label class="assistant-prompt-label" for="assistantQuestion">What are you working on?</label>
+          <div class="assistant-prompt">
+            <textarea id="assistantQuestion" rows="3" placeholder="Ask a question, compare approaches, or describe a challenge..." required></textarea>
+            <button class="primary-btn" id="assistantSubmit" type="submit">Ask the library</button>
+          </div>
+        </form>
+
+        <div class="assistant-suggestions" aria-label="Suggested questions">
+          <span>Try</span>
+          <button type="button" class="prompt-suggestion">What can I reuse for a sales transformation?</button>
+          <button type="button" class="prompt-suggestion">Find AI and data monetization examples</button>
+          <button type="button" class="prompt-suggestion">Help me prepare for an architecture discussion</button>
+        </div>
+        <div class="assistant-response" id="assistantResponse" aria-live="polite" aria-atomic="true" hidden></div>
+      </section>
+
       <section class="workspace-section" id="knowledge-tools">
         <div class="section-intro"><span class="section-number">02</span><div><p class="section-label">Knowledge workspace</p><h2>Move from finding to making.</h2></div></div>
         <div class="tool-tabs" role="tablist" aria-label="Knowledge workspace tools">
-          <button class="tool-tab is-active" data-tool="slides" role="tab" aria-selected="true">Slide Finder</button>
-          <button class="tool-tab" data-tool="docs" role="tab" aria-selected="false">Doc Finder</button>
-          <button class="tool-tab" data-tool="upload" role="tab" aria-selected="false">Upload Docs</button>
+          <button class="tool-tab" id="slidesTab" data-tool="slides" role="tab" aria-selected="false" aria-controls="slidesPanel">Slide Finder</button>
+          <button class="tool-tab is-active" id="docsTab" data-tool="docs" role="tab" aria-selected="true" aria-controls="docsPanel">Doc Finder</button>
+          <button class="tool-tab" id="themesTab" data-tool="themes" role="tab" aria-selected="false" aria-controls="themesPanel">Themes</button>
+          <button class="tool-tab" id="uploadTab" data-tool="upload" role="tab" aria-selected="false" aria-controls="uploadPanel">Upload Docs</button>
         </div>
 
         <div class="tool-panels">
-          <section class="tool-panel is-active" data-panel="slides" role="tabpanel">
+          <section class="tool-panel" id="slidesPanel" data-panel="slides" role="tabpanel" aria-labelledby="slidesTab" hidden>
             <div class="tool-copy"><span class="section-label">Search presentation intelligence</span><h3>Find the right slide faster.</h3><p>Browse the library like a research partner—surface relevant themes, analogues, and strategic signals from the TMT knowledge base.</p></div>
             <div class="tool-form inline-form"><input id="slideSearchInput" type="search" placeholder="Try: AI, data monetization, architecture, strategy, analogue research" /><button class="primary-btn" id="slideSearchBtn" type="button">Find slides</button></div>
             <div id="slideResults" class="tool-results"></div>
           </section>
 
-          <section class="tool-panel" data-panel="docs" role="tabpanel" hidden>
-            <div class="tool-copy"><span class="section-label">Document intelligence</span><h3>Research. Compare. Synthesize.</h3><p>Search across the library to identify the most relevant documents, compare patterns, and build a sharper analytical narrative.</p></div>
-            <div class="tool-form inline-form"><input id="docFinderInput" type="search" placeholder="Search customer, proposal, capability, AI, or monetization theme" /><button class="primary-btn" id="docFinderBtn" type="button">Find documents</button></div>
-            <div id="docFinderResults" class="tool-results"></div>
+          <section class="tool-panel is-active" id="docsPanel" data-panel="docs" role="tabpanel" aria-labelledby="docsTab">
+            <div class="tool-copy"><span class="section-label">Document intelligence</span><h3>Research. Compare. Synthesize.</h3><p>Search the library, then refine by document type, saved items, or sort order.</p></div>
+            <div class="doc-search-tools">
+              <form class="tool-form inline-form" id="docSearchForm">
+                <input id="searchInput" type="search" aria-label="Search library documents" placeholder="Search customer, proposal, capability, AI, or monetization theme" />
+                <button class="primary-btn search-btn" id="searchBtn" type="submit">Search</button>
+                <button class="primary-btn" id="clearBtn" type="button">Clear</button>
+              </form>
+              <div class="library-controls" aria-label="Library controls">
+                <label>Filter by type
+                  <select id="typeFilter">
+                    <option value="all">All document types</option>
+                  </select>
+                </label>
+                <label>Sort results
+                  <select id="sortSelect">
+                    <option value="relevance">Relevance</option>
+                    <option value="title">Title A-Z</option>
+                    <option value="category">Category</option>
+                  </select>
+                </label>
+                <button class="control-btn" id="favoritesBtn" type="button" aria-pressed="false">Saved only <span id="favoritesCount">0</span></button>
+              </div>
+              <div class="suggested-tags" id="suggestedTags" aria-label="Suggested searches"></div>
+            </div>
           </section>
 
-          <section class="tool-panel" data-panel="upload" role="tabpanel" hidden>
+          <section class="tool-panel" id="themesPanel" data-panel="themes" role="tabpanel" aria-labelledby="themesTab" hidden>
+            <div class="tool-copy"><span class="section-label">Browse by theme</span><h3>Start with a strategic area.</h3><p>Choose a theme to filter the library results by the solution focus assigned to each document.</p></div>
+            <div class="theme-browser">
+              <label class="theme-search-label" for="themeSearchInput">Find a theme
+                <input id="themeSearchInput" type="search" placeholder="Filter themes by name" />
+              </label>
+              <div id="themeList" class="theme-list" aria-label="Available themes"></div>
+            </div>
+          </section>
+
+          <section class="tool-panel" id="uploadPanel" data-panel="upload" role="tabpanel" aria-labelledby="uploadTab" hidden>
             <div class="tool-copy"><span class="section-label">Upload docs</span><h3>Feed fresh evidence into the research loop.</h3><p>Add new files and turn them into working references for faster synthesis, comparison, and insight-building.</p></div>
-            <div class="upload-drop"><strong>Choose files</strong><span>PDF, PPTX, PPT, DOCX, XLSX, or TXT</span><button class="primary-btn upload-browse-btn" id="uploadBrowseBtn" type="button">Browse files</button><label class="upload-input-label" for="uploadInput">Or choose directly<input id="uploadInput" type="file" multiple accept=".pdf,.pptx,.ppt,.docx,.xlsx,.txt" /></label></div>
+            <div class="upload-drop">
+              <strong>Browse your system for documents</strong>
+              <span>Choose PDF, PPTX, PPT, DOCX, XLSX, or TXT files</span>
+              <label class="primary-btn upload-browse-btn" for="uploadInput">Browse files<input id="uploadInput" type="file" multiple accept=".pdf,.pptx,.ppt,.docx,.xlsx,.txt" aria-describedby="uploadHelp uploadStatus" /></label>
+              <span id="uploadHelp" class="upload-help">Files are stored in this browser. Keywords and themes use filenames and readable TXT content; PDF and Office files currently use filename metadata.</span>
+            </div>
             <div id="uploadStatus" class="upload-status" role="status" aria-live="polite"></div>
             <div id="uploadList" class="project-list"></div>
           </section>
         </div>
-      </section>
 
-      <section class="search-panel" id="library">
-        <div class="section-intro"><span class="section-number">03</span><div><p class="section-label">The library</p><h2>Search the signal.</h2></div></div>
-        <div class="search-row">
-          <label class="search-box" for="searchInput">
-            <span>Search library</span>
-            <input id="searchInput" type="search" placeholder="Search by keyword: CWS, Orange, Maxis, AI, data monetization, RFP, digital transformation..." />
-          </label>
-          <button class="primary-btn search-btn" id="searchBtn" type="button">Search</button>
-          <button class="primary-btn" id="clearBtn" type="button">Clear</button>
-        </div>
-        <div class="library-controls" aria-label="Library controls">
-          <label>Filter by type
-            <select id="typeFilter">
-              <option value="all">All document types</option>
-            </select>
-          </label>
-          <label>Sort results
-            <select id="sortSelect">
-              <option value="relevance">Relevance</option>
-              <option value="title">Title A-Z</option>
-              <option value="category">Category</option>
-            </select>
-          </label>
-          <button class="control-btn" id="favoritesBtn" type="button" aria-pressed="false">Saved only <span id="favoritesCount">0</span></button>
-        </div>
-        <div class="suggested-tags" id="suggestedTags"></div>
-      </section>
-
-      <section class="overview-layout" id="areas">
-        <aside class="side-panel">
-          <div class="section-intro"><span class="section-number">03</span><div><p class="section-label">Explore by theme</p><h2>Where ideas<br>take shape.</h2></div></div>
-          <h3>High-level areas covered</h3>
-          <ul id="areaList" class="area-list"></ul>
-        </aside>
-
-        <div class="results-panel">
+        <div class="results-panel library-results" id="library">
           <div class="results-header">
-            <p class="section-label">Search results</p>
+            <p class="section-label">Library results</p>
             <div class="results-tools"><span id="resultCount">0 matches</span><button class="text-btn" id="resetViewBtn" type="button">Reset view</button></div>
           </div>
           <div id="resultsContainer" class="results-container"></div>
